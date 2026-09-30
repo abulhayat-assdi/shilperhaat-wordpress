@@ -1,0 +1,1642 @@
+{
+    "categories": [
+        {
+            "id": "cmqb4ipuq000101o99488s2hm",
+            "name": "Baby kantha",
+            "slug": "baby-kantha",
+            "imageUrl": "/uploads/categories/1781280879013-jpt95u9blu.webp",
+            "isFeatured": "t",
+            "sortOrder": "100",
+            "createdAt": "2026-06-12 16:11:10.563",
+            "updatedAt": "2026-06-12 16:14:40.994"
+        },
+        {
+            "id": "cmqgf0fju001801p79tsbduzv",
+            "name": "Feeding item (baby)",
+            "slug": "feeding-item-baby",
+            "imageUrl": "/uploads/categories/1781600605076-us4gidztio.webp",
+            "isFeatured": "t",
+            "sortOrder": "500",
+            "createdAt": "2026-06-16 09:03:44.058",
+            "updatedAt": "2026-06-16 09:03:44.058"
+        },
+        {
+            "id": "cmr1upxld003v01p78qp1b3w9",
+            "name": "For Little Ones",
+            "slug": "for-little-ones",
+            "imageUrl": "/uploads/categories/1782896689947-wmy3jcyol6.webp",
+            "isFeatured": "t",
+            "sortOrder": "1",
+            "createdAt": "2026-07-01 09:06:37.778",
+            "updatedAt": "2026-07-23 21:02:09.235"
+        },
+        {
+            "id": "cmqg9295e000u01p7qmgbgk2n",
+            "name": "(King size) nakshi Katha",
+            "slug": "king-size-nakshi-katha",
+            "imageUrl": "/uploads/categories/1784840924086-7obl96uctjn.webp",
+            "isFeatured": "t",
+            "sortOrder": "200",
+            "createdAt": "2026-06-16 06:17:11.378",
+            "updatedAt": "2026-07-23 21:08:51.515"
+        },
+        {
+            "id": "cmqq9kaui002e01p7aia9qsi7",
+            "name": "Mother item",
+            "slug": "mother-item",
+            "imageUrl": "/uploads/categories/1784841620943-pxkzx1pvvv9.webp",
+            "isFeatured": "t",
+            "sortOrder": "100",
+            "createdAt": "2026-06-23 06:28:55.146",
+            "updatedAt": "2026-07-23 21:20:25.483"
+        }
+    ],
+    "products": [
+        {
+            "id": "cmqgg2k8p001901p72a7ajgk0",
+            "title": "\"King size\" premium jamalpuri nakshi katha (maroon color-2)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-maroon-color-2",
+            "description": "<h2><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত&nbsp;</font></h2><div><br></div><div>★হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div>★উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div>★সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div>★নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div>★ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><div><br></div><div><i><font color=\"#f48721\"><b>\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</b></font></i></div>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "20",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-16 09:33:23.065",
+            "updatedAt": "2026-06-16 09:33:23.065"
+        },
+        {
+            "id": "cmqg9dte7000v01p7sr64gdwn",
+            "title": "\"King size\" premium jamalpuri nakshi katha (Navy color)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-navy-color",
+            "description": "<h2><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত&nbsp;</font></h2><div><br></div><div>★হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div>★উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div>★সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div>★নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div>★ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><div><br></div><div><font color=\"#f48721\"><i>\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</i></font></div>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "2",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-16 06:26:10.831",
+            "updatedAt": "2026-06-16 08:44:42.95"
+        },
+        {
+            "id": "cmqgeezcm001501p7r3ygi7et",
+            "title": "\"King size\" premium jamalpuri nakshi katha (maroon color)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-maroon-color",
+            "description": "<h2><u><b><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত</font></b></u>&nbsp;</h2><div><br></div><div>★হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div>★উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div>★সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div>★নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div>★ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><div><font color=\"#f48721\"><i><br></i></font></div><div><font color=\"#f48721\"><i>\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</i></font></div>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "50",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-16 08:47:03.286",
+            "updatedAt": "2026-06-16 08:47:03.286"
+        },
+        {
+            "id": "cmqe9wmcf000s01p7dq6v2by8",
+            "title": "(Big size) Ac baby nakshi Katha  (7-Peace)",
+            "slug": "big-size-ac-baby-nakshi-katha-7-peace",
+            "description": "<font color=\"#e53e3e\"><b>এসি বেবি নকশি কাঁথা সম্পর্কে বিস্তারিত..&nbsp;</b></font><div><br></div><div><font color=\"#f48721\"><i><b>৭ পিস এসি বেবি নকশি কাঁথা মাত্র ১,৫৮০ টাকা</b></i></font><br><div><br></div><div><b>সাইজ</b> ৩২\"৪২\"+</div><div>(অর্থাৎ বেবী নকশী কাঁথার সবচেয়ে বড় সাইজ)&nbsp;</div><div><br></div><div>★উভয় পাশে সেম কাজ (ডাবল লেয়ার)</div><div><br></div><div>★পরিপূর্ণ সুতী কাপড়ের তৈরি&nbsp;</div><div>(গরমে বাবুর রাফ ইউজ এর জন্য পারফেক্ট নকশি কাঁথা)</div><div><br></div><div><br></div></div>",
+            "price": "1580.00",
+            "compareAtPrice": "1780.00",
+            "stock": "90",
+            "categoryId": "cmqb4ipuq000101o99488s2hm",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-14 21:05:15.807",
+            "updatedAt": "2026-06-29 09:20:30.633"
+        },
+        {
+            "id": "cmqggldgo001d01p74awq3idq",
+            "title": "\"King size\" premium jamalpuri nakshi katha (red color)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-red-color",
+            "description": "<h2><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত&nbsp;</font></h2><div><br></div><div>★হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div>★উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div>★সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div>★নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div>★ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><div><br></div><div><i><font color=\"#f48721\">\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</font></i></div>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "20",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-16 09:48:00.744",
+            "updatedAt": "2026-06-16 13:48:05.476"
+        },
+        {
+            "id": "cmqgpe6o6001m01p7ustug5hu",
+            "title": "\"King size\" premium jamalpuri nakshi katha (magenta color)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-magenta-color",
+            "description": "<h2><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত&nbsp;</font></h2><div><br></div><div>★হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div>★উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div>★সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div>★নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div>★ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><div><br></div><div><font color=\"#f48721\"><i><b>\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</b></i></font></div>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "20",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-16 13:54:21.894",
+            "updatedAt": "2026-06-16 13:54:21.894"
+        },
+        {
+            "id": "cmqgpwscn001q01p752lpg3x7",
+            "title": "\"King size\" premium jamalpuri nakshi katha (pink color)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-pink-color",
+            "description": "<h2><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত&nbsp;</font></h2><div><br></div><div><font color=\"#e53e3e\">★</font>হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div><font color=\"#e53e3e\">★</font>উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div><font color=\"#e53e3e\">★</font>সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div><font color=\"#e53e3e\">★</font>নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div><font color=\"#e53e3e\">★</font>ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><div><br></div><div><font color=\"#f48721\"><b><i>\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</i></b></font></div>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "20",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-16 14:08:49.799",
+            "updatedAt": "2026-06-16 14:08:49.799"
+        },
+        {
+            "id": "cmqgr485x001u01p7ryzznj2o",
+            "title": "\"King size\" premium jamalpuri nakshi katha (Yolo color)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-yolo-color",
+            "description": "<h2><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত&nbsp;</font></h2><div><br></div><div><font color=\"#e53e3e\">★</font>হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div><font color=\"#e53e3e\">★</font>উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div><font color=\"#e53e3e\">★</font>সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div><font color=\"#e53e3e\">★</font>নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div><font color=\"#e53e3e\">★</font>ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><h2><font color=\"#f48721\"><i><br>\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</i></font></h2>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "10",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-16 14:42:36.501",
+            "updatedAt": "2026-06-16 14:48:17.736"
+        },
+        {
+            "id": "cmqgrh45u001x01p7oewlvwyn",
+            "title": "\"King size\" premium jamalpuri nakshi katha (Red color-02)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-red-color-02",
+            "description": "<h2><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত&nbsp;</font></h2><div><br></div><div><font color=\"#e53e3e\">★</font>হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div><font color=\"#e53e3e\">★</font>উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div><font color=\"#e53e3e\">★</font>সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div><font color=\"#e53e3e\">★</font>নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div><font color=\"#e53e3e\">★</font>ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><div><br></div><div><font color=\"#f48721\"><b><i>\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</i></b></font></div>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "20",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-16 14:52:37.842",
+            "updatedAt": "2026-06-17 05:56:08.91"
+        },
+        {
+            "id": "cmqhnwd5b002401p76l3o47wt",
+            "title": "\"King size\" premium jamalpuri nakshi katha (yellow color-02)",
+            "slug": "king-size-premium-jamalpuri-nakshi-katha-yellow-color-02",
+            "description": "<h2><font color=\"#e53e3e\">কিং সাইজ জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত&nbsp;</font></h2><div><br></div><div><font color=\"#e53e3e\">★</font>হাইগ্রেডের মোটা সুতী কাপড়ের তৈরি&nbsp;</div><div><font color=\"#e53e3e\">★</font>উভয় পাশে সেম কাপড়। ব্যাক সাইডে কোন ধরনের ফলস বা পাতলা কাপড় নেই।&nbsp;</div><div><font color=\"#e53e3e\">★</font>সেলাই লক করা। অর্থাৎ হঠাৎ কোথাও টান লাগলে ছিঁড়ে যাবে না।</div><div><font color=\"#e53e3e\">★</font>নকশি কাঁথাগুলো তৈরির পর আমাদের এখানেই একবার ওয়াশ করা হয়ে থাকে। সুতরাং আপনি দেখলেই বুঝতে পারবেন কালার গিয়েছে কিনা।</div><div><font color=\"#e53e3e\">★</font>ফ্রন্ট সাইডে ভারী কাজ। ব্যাকসাইডে সলিড কাপড় লাগানো। যেন গায়ে দেওয়ার পর আপনি পরিপূর্ণ ওম পেতে পারেন</div><div><br></div><div><font color=\"#f48721\"><i>\"এক কথায় কোয়ালিটিতে আপনি পরিপূর্ণ সন্তুষ্ট থাকবেন ইনশাল্লাহ\"</i></font></div>",
+            "price": "2280.00",
+            "compareAtPrice": "2850.00",
+            "stock": "20",
+            "categoryId": "cmqg9295e000u01p7qmgbgk2n",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-17 06:00:17.039",
+            "updatedAt": "2026-06-17 06:00:17.039"
+        },
+        {
+            "id": "cmqqb10c4002f01p7hko274j4",
+            "title": "Very necessary product for breastfeeding mom",
+            "slug": "very-necessary-product-for-breastfeeding-mom",
+            "description": "পরে লিখব",
+            "price": "1650.00",
+            "compareAtPrice": "1950.00",
+            "stock": "100",
+            "categoryId": "cmqq9kaui002e01p7aia9qsi7",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% silicon"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-23 07:09:54.292",
+            "updatedAt": "2026-06-23 07:09:54.292"
+        },
+        {
+            "id": "cmqz0h1ai003o01p7s0sbow8n",
+            "title": "Ac baby nakshi Katha (10 piece)",
+            "slug": "ac-baby-nakshi-katha-10-piece",
+            "description": "<h2>এসি বেবি নকশি কাঁথা সম্পর্কে বিস্তারিত..&nbsp;</h2><div><br></div><h2><font color=\"#e53e3e\"><b>১০ পিস এসি বেবি নকশি কাঁথা মাত্র ২১৯০ টাকা</b></font></h2><div><br></div><h2>সাইজ ৩২\"৪২\"+</h2><div>(অর্থাৎ বেবী নকশী কাঁথার সবচেয়ে বড় সাইজ)&nbsp;</div><div><br></div><div><font color=\"#e53e3e\">★</font><b>উভয় পাশে সেম কাজ (ডাবল লেয়ার)</b></div><div><br></div><div><font color=\"#e53e3e\">★</font><b>পরিপূর্ণ সুতী কাপড়ের তৈরি&nbsp;</b></div><div><b>(গরমে বাবুর রাফ ইউজ এর জন্য পারফেক্ট নকশি কাঁথা)</b></div><div><br></div><div><br></div>",
+            "price": "2190.00",
+            "compareAtPrice": "2500.00",
+            "stock": "100",
+            "categoryId": "cmqb4ipuq000101o99488s2hm",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-29 09:24:21.834",
+            "updatedAt": "2026-06-29 09:24:21.834"
+        },
+        {
+            "id": "cmqe9dcmw000q01p702dikskr",
+            "title": "Jamalpuri gorgeous nakshi Katha. (5-piece) \"1pis ac nakshi Katha free\"",
+            "slug": "jamalpuri-gorgeous-nakshi-katha-5-piece",
+            "description": "<b>জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত..&nbsp;&nbsp;</b><div><br></div><div><font color=\"#f48721\"><i>(৫ পিসের কম্বো গিফট বক্সের সাথে ১টি এসি বেবি নকশি কাঁথা সম্পূর্ণ ফ্রি)</i></font></div><div><br></div><div><b>সাইজ</b>&nbsp;</div><div>★ ৩২\"/৪১\"</div><div>(বাবুর আড়াই থেকে তিন বছর পর্যন্ত ইজিলি ইউজ করা যায়)</div><div><br></div><div><b>কাঁথা বৃত্তান্ত</b></div><div>★ হুবুহু বড় নকশী কাঁথার মোটা সুতি কাপড় দিয়ে তৈরি হয় এই কাঁথাগুলো&nbsp;</div><div>&nbsp;</div><div>★ নকশী কাঁথাগুলোর ব্যাকপার্টে কোন ধরনের ফলস বা পাতলা কাপড় নেই। উভয় পাশে সেম সুতি কাপড় ইউজ করা হয় ।&nbsp;</div><div><br></div><div>★ জামালপুরের স্থানীয় কর্মীদের ৭-১০  দিন টানা পরিশ্রমে আমাদের একটি একটি কাঁথা তৈরি হয় ।&nbsp;</div><div><br></div><div>★ বাবুর আরামের জন্য কাঁথাগুলোর ব্যাকপার্টে সলিড কাপড় লাগানো থাকে। যেন গায়ে সুতার রেশ না পড়ে এবং বাবু পুরোপুরি ওম পেতে পারে&nbsp;&nbsp;</div>",
+            "price": "2380.00",
+            "compareAtPrice": "2650.00",
+            "stock": "50",
+            "categoryId": "cmqb4ipuq000101o99488s2hm",
+            "isFeatured": "f",
+            "isBestSelling": "t",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% poplin cotton"
+            ],
+            "videoUrl": "/uploads/videos/1781470126664-o75m2ydpks.mp4",
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-14 20:50:16.76",
+            "updatedAt": "2026-07-04 09:26:50.259"
+        },
+        {
+            "id": "cmqe8mde5000001p7t7i7dcc6",
+            "title": "Jamalpuri gorgeous nakshi Katha (5-piece) \"1pis ac nakshi Katha free\"",
+            "slug": "jamalpuri-gorgeous-nakshi-katha-5-piece-1pis-ac-nakshi-katha-free",
+            "description": "<h3><b>জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে  বিস্তারিত..&nbsp;&nbsp;</b></h3><div><br></div><div><b><font color=\"#f48721\"><i>(৫ পিসের কম্বো গিফট বক্সের সাথে ১টি এসি বেবি নকশি কাঁথা সম্পূর্ণ ফ্রি)</i></font><br></b><div><br><div><b>সাইজ</b>&nbsp;</div><div>★ ৩২\"/৪১\"</div><div>(বাবুর আড়াই থেকে তিন বছর পর্যন্ত ইজিলি ইউজ করা যায়)<br><div><br></div><div><b>কাঁথা বৃত্তান্ত</b></div><div>★ হুবুহু বড় নকশী কাঁথার মোটা সুতি কাপড় দিয়ে তৈরি হয় এই কাঁথাগুলো&nbsp;</div><div>&nbsp;</div><div>★ নকশী কাঁথাগুলোর ব্যাকপার্টে কোন ধরনের ফলস বা পাতলা কাপড় নেই। উভয় পাশে সেম সুতি কাপড় ইউজ করা হয় ।&nbsp;</div><div><br></div><div>★ জামালপুরের স্থানীয় কর্মীদের ৭-১০&nbsp; দিন টানা পরিশ্রমে আমাদের একটি একটি  কাঁথা তৈরি হয় ।&nbsp;</div><div><br></div><div>★  বাবুর আরামের জন্য কাঁথাগুলোর ব্যাকপার্টে সলিড কাপড় লাগানো থাকে। যেন গায়ে সুতার রেশ না পড়ে এবং বাবু পুরোপুরি ওম পেতে পারে&nbsp;&nbsp;</div><div><br></div></div></div></div>",
+            "price": "2380.00",
+            "compareAtPrice": "2650.00",
+            "stock": "149",
+            "categoryId": "cmr1upxld003v01p78qp1b3w9",
+            "isFeatured": "f",
+            "isBestSelling": "t",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% poplin cotton"
+            ],
+            "videoUrl": "/uploads/videos/1781468851465-worowcu4h2.mp4",
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-14 20:29:18.029",
+            "updatedAt": "2026-09-16 07:22:51.957"
+        },
+        {
+            "id": "cmqq9bbed002c01p79mveys3u",
+            "title": "Jamalpuri gorgeous nakshi Katha. (3-piece)",
+            "slug": "jamalpuri-gorgeous-nakshi-katha-3-piece",
+            "description": "<h2><font color=\"#e53e3e\">জামালপুরি গর্জিয়াস নকশি কাঁথা সম্পর্কে বিস্তারিত..&nbsp;&nbsp;</font></h2><div><br></div><h2>সাইজ&nbsp;</h2><div><font color=\"#e53e3e\">★</font> ৩২\"/৪১\"</div><div>(বাবুর আড়াই থেকে তিন বছর পর্যন্ত ইজিলি ইউজ করা যায়)</div><div><br></div><h2>কাঁথা বৃত্তান্ত</h2><div><font color=\"#e53e3e\">★</font> হুবুহু বড় নকশী কাঁথার মোটা সুতি কাপড় দিয়ে তৈরি হয় এই কাঁথাগুলো&nbsp;</div><div>&nbsp;</div><div><font color=\"#e53e3e\">★</font> নকশী কাঁথাগুলোর ব্যাকপার্টে কোন ধরনের ফলস বা পাতলা কাপড় নেই। উভয় পাশে সেম সুতি কাপড় ইউজ করা হয় ।&nbsp;</div><div><br></div><div><font color=\"#e53e3e\">★</font> জামালপুরের স্থানীয় কর্মীদের ৭-১০ দিন টানা পরিশ্রমে আমাদের একটি একটি কাঁথা তৈরি হয় ।&nbsp;</div><div><br></div><div><font color=\"#e53e3e\">★</font> বাবুর আরামের জন্য কাঁথাগুলোর ব্যাকপার্টে সলিড কাপড় লাগানো থাকে। যেন গায়ে সুতার রেশ না পড়ে এবং বাবু পুরোপুরি ওম পেতে পারে&nbsp;&nbsp;</div>",
+            "price": "1460.00",
+            "compareAtPrice": "1680.00",
+            "stock": "99",
+            "categoryId": "cmqb4ipuq000101o99488s2hm",
+            "isFeatured": "f",
+            "isBestSelling": "t",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% poplin cotton"
+            ],
+            "videoUrl": "/uploads/videos/1782206663793-x9z5fs0um8.mp4",
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-06-23 06:21:55.957",
+            "updatedAt": "2026-09-22 04:04:55.669"
+        },
+        {
+            "id": "cmrxzs6yg000001l5lxzhx6ex",
+            "title": "baby adjustable (Mustard) Pillow 1",
+            "slug": "baby-adjustable-mustard-pillow-1",
+            "description": "<h2><font color=\"#e53e3e\"><u>সরিষা বালিশ সম্পর্কে বিস্তারিত</u></font><u style=\"color: rgb(229, 62, 62); font-size: 1.25em;\">&nbsp;</u></h2><div><u style=\"color: rgb(229, 62, 62); font-size: 1.25em;\"><br></u></div><div><span style=\"font-size: 17.5px;\"><font color=\"#222831\">&nbsp;</font><font color=\"#e53e3e\">★</font><font color=\"#222831\"> বাবুর মাথার শেপ গোল করতে সরিষা বালিশের ব্যবহার প্রায় শত শত বছরের পুরোনো&nbsp;</font></span></div><div><font color=\"#222831\"><span style=\"font-size: 17.5px;\"><br></span></font></div><div><span style=\"font-size: 17.5px;\"><font color=\"#e53e3e\">★</font><font color=\"#222831\"> জন্মের পর শিশুরস তাদের&nbsp; ঘাড় ঠিক ভাবে ধরে রাখতে পারে না। এই বালিশটা তাদের ঘাড় কে দারুন সাপোর্ট দেয়&nbsp;</font></span></div><div><font color=\"#222831\"><span style=\"font-size: 17.5px;\"><br></span></font></div><div><span style=\"font-size: 17.5px;\"><font color=\"#e53e3e\">★</font><font color=\"#222831\">বালিশের ফেব্রিক গুলো সরাসরি চায়না ইমপোর্টেড। অত্যন্ত উন্নত মানের ফেব্রিক ইউজ করা হয়েছে আলহামদুলিল্লাহ&nbsp;</font></span></div><div><font color=\"#222831\"><span style=\"font-size: 17.5px;\"><br></span></font></div><div><span style=\"font-size: 17.5px;\"><font color=\"#e53e3e\">★</font><font color=\"#222831\">১০০% সুপার কটন</font></span></div><div><font color=\"#222831\"><span style=\"font-size: 17.5px;\"><br></span></font></div><div><span style=\"font-size: 17.5px;\"><font color=\"#e53e3e\">★</font><font color=\"#222831\">প্রতিটি কভারের ভেতরে আরও একটি কভার রয়েছে। তার ভেতরে সরিষা রাখা।&nbsp;</font></span></div><div><font color=\"#222831\"><span style=\"font-size: 17.5px;\"><br></span></font></div><div><span style=\"font-size: 17.5px;\"><font color=\"#e53e3e\"><b>★</b></font><font color=\"#222831\">দুই পাশে পিলো থাকায়&nbsp; বাবুর মাথার সাথে খুব সহজে অ্যাডজাস্ট হয়ে যায়।&nbsp;</font></span></div><div><font color=\"#222831\"><span style=\"font-size: 17.5px;\"><br></span></font></div><div><span style=\"font-size: 17.5px;\"><font color=\"#f48721\"><i><b>একথায় বাবুর মাথাকে গোল করতে এবং ঘাড় কে সাপোর্ট দিতে অত্যন্ত প্রয়োজনীয় একটি প্রোডাক্ট</b></i></font></span></div><div><font color=\"#222831\"><span style=\"font-size: 17.5px;\"><br></span></font></div>",
+            "price": "590.00",
+            "compareAtPrice": "720.00",
+            "stock": "96",
+            "categoryId": "cmr1upxld003v01p78qp1b3w9",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-07-23 20:56:58.936",
+            "updatedAt": "2026-08-22 06:00:50.292"
+        },
+        {
+            "id": "cmr1vmcm3003w01p7du72hbf4",
+            "title": "(3 piece combo) nakshi Katha & sarisha pillow",
+            "slug": "3-piece-combo-nakshi-katha-sarisha-pillow",
+            "description": "<h2><font color=\"#e53e3e\">২ টি লাহোরী নকশি কাঁথা ও ১ টি সরিষা বালিশের দারুন কম্বো!🥰</font></h2><div><br></div><h2><font color=\"#f48721\">সরিষা বালিশ&nbsp;</font></h2><div>(চায়না ইমপোর্টেড) সরিষা বালিশ বাবুর মাথাকে গোল করতে এবং তার ঘাড়ের সঠিক পজিশন ধরে রাখতে অত্যন্ত প্রয়োজনীয় একটি প্রোডাক্ট।</div><div><br></div><h2><font color=\"#f48721\"><b>লাহোরী নকশিকাঁথা&nbsp;</b></font></h2><div><font color=\"#f48721\"><b><br></b></font></div><div><font color=\"#f48721\">★</font> <b>সাইজ ৩২\"/৪১\"+</b></div><div>&nbsp; &nbsp;(অর্থাৎ বেবি নকশী কাঁথার সবচেয়ে বড় সাইজের )</div><div><br></div><div><font color=\"#f48721\">★</font> <b>সর্বোচ্চ মানের সুতী কাপড়ের পরিপূর্ণ নিশ্চয়তা</b></div><div>&nbsp;</div><div><font color=\"#f48721\">★</font> <b>উভয় পাশে সেম কাপড়&nbsp;</b></div><div>&nbsp; &nbsp;(ব্যাকসাইডে কোন ধরনের ফলস বা পাতলা কাপড়</div><div>&nbsp; &nbsp;ইউজ করা হয়নি)</div><div><br></div><div><font color=\"#f48721\">★</font> <b>সেলাই লক করা&nbsp;</b></div><div>&nbsp; &nbsp; (কোথাও টান লাগলে ছিঁড়ে যাবে না)</div><div><br></div><div>&nbsp;<font color=\"#e53e3e\"><b>বাবুর জন্য অত্যন্ত প্রয়োজনীয় একটি দারুণ কম্ব</b></font></div>",
+            "price": "1480.00",
+            "compareAtPrice": "1890.00",
+            "stock": "50",
+            "categoryId": "cmr1upxld003v01p78qp1b3w9",
+            "isFeatured": "f",
+            "isBestSelling": "t",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% poplin cotton"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-07-01 09:31:50.235",
+            "updatedAt": "2026-08-18 18:01:32.893"
+        },
+        {
+            "id": "cmsepw1m4000001phihs6290r",
+            "title": "Complete feeding set",
+            "slug": "complete-feeding-set",
+            "description": "<h2><font color=\"#e53e3e\">Complete Baby Feeding Set&nbsp;<span style=\"font-size: 1.1em; font-weight: normal;\">–&nbsp;</span></font></h2><h2><span style=\"font-size: 1.1em; font-weight: normal; color: rgb(229, 62, 62);\">(13 Pieces) ✅</span></h2><div><span style=\"color: rgb(34, 40, 49); font-size: 1.25em; font-weight: 700;\"><br></span></div><div><span style=\"color: rgb(34, 40, 49); font-size: 1.25em; font-weight: 700;\">আমাদের শিল্পেরহাটে সবচেয়ে বেশি বিক্রিত পণ্য, \"এই প্রিমিয়াম ফিডিং সেটটি\" আলহামদুলিল্লাহ&nbsp;</span></div><h2><br>কারণ আমরা বাবা মাদেরকে এটা নিশ্চিত করতে পেরেছি যে এই প্যাকেজে সবকিছুই দিচ্ছি ব্রান্ডের ও অত্যন্ত হাই কোয়ালিটির</h2><div><br></div><h2><font color=\"#e53e3e\">প্যাকেজে থাকছে</font>-</h2><h2><font color=\"#e53e3e\">★</font>ডাকবিগ ব্র্যান্ডের প্রিমিয়াম মামপট।&nbsp;</h2><h2><font color=\"#e53e3e\">★</font>অ্যাপল বিয়ার ব্যান্ডের ফুডগ্রেড ফুল</h2><h2>&nbsp; &nbsp; সিলিকন স্পুন ফিডার&nbsp;</h2><h2><font color=\"#e53e3e\">★</font>একটি 304 গ্রেডের স্টেইনলেস স্টিট&nbsp; &nbsp; &nbsp; পট,</h2><h2><font color=\"#e53e3e\">★</font>এপোল বিয়ার ব্যান্ডের ফুড মেশার।</h2><h2><font color=\"#e53e3e\">★</font>একটি সিলিকন ফ্রুড পেসিফিয়ার ।</h2><h2><font color=\"#e53e3e\">★</font>ট্রে বিপ,</h2><h2><u><font color=\"#e53e3e\">★</font></u>সিলিকন ডাবল স্পুন।&nbsp;</h2><h2><font color=\"#e53e3e\">★</font>নি প্রটেকশন প্যাড</h2><h2><font color=\"#e53e3e\">★</font>ফুড গ্রেড সিলিকন ফিংগার ব্রাশ।&nbsp;</h2><h2><font color=\"#e53e3e\">★</font>শাওয়ার ব্রাশ</h2><h2><font color=\"#e53e3e\">★</font>এল ই ডি ইয়ার পিক,</h2><h2><font color=\"#e53e3e\">★</font>মামপট ও ফিডারের স্ট্রো ক্লিনার</h2><div><br></div><h2><font color=\"#f48721\"><i>কোন অপ্রয়োজনীয় বা সস্তা পণ্য নয়।&nbsp;<br></i></font><font color=\"#f48721\"><i>অত্যন্ত প্রয়োজনীয় সব প্রোডাক্ট দিয়ে সাজানো হয়েছে আমাদের এই প্যাকেজটি</i></font></h2>",
+            "price": "1399.00",
+            "compareAtPrice": "1560.00",
+            "stock": "1000",
+            "categoryId": "cmr1upxld003v01p78qp1b3w9",
+            "isFeatured": "f",
+            "isBestSelling": "f",
+            "status": "ACTIVE",
+            "sku": null,
+            "tags": [
+                "100% food grade silicon"
+            ],
+            "videoUrl": null,
+            "youtubeUrl": null,
+            "youtubeVideoId": null,
+            "createdAt": "2026-08-04 13:52:07.468",
+            "updatedAt": "2026-08-22 06:01:22.827"
+        }
+    ],
+    "product_images": [
+        {
+            "id": "cmt3z29qg001801mt03vu850t",
+            "productId": "cmqe8mde5000001p7t7i7dcc6",
+            "imageUrl": "/uploads/products/1784841870973-rtfv3chx18d.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmt3z29qg001901mt8zwksj4n",
+            "productId": "cmqe8mde5000001p7t7i7dcc6",
+            "imageUrl": "/uploads/products/1781468842273-g9a36r9eyvm.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmt3z29qg001a01mtpb90tpvo",
+            "productId": "cmqe8mde5000001p7t7i7dcc6",
+            "imageUrl": "/uploads/products/1781468848518-g7vpjwg5irn.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmt3z29qg001b01mtdigu7dbf",
+            "productId": "cmqe8mde5000001p7t7i7dcc6",
+            "imageUrl": "/uploads/products/1781468855036-6y3xq3jm1vo.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmt3z29qg001c01mtvqpkhba8",
+            "productId": "cmqe8mde5000001p7t7i7dcc6",
+            "imageUrl": "/uploads/products/1781468859402-q66n3fd5ydd.webp",
+            "sortOrder": "4",
+            "altText": null
+        },
+        {
+            "id": "cmt3z29qg001d01mt2eigeflv",
+            "productId": "cmqe8mde5000001p7t7i7dcc6",
+            "imageUrl": "/uploads/products/1781468866506-jgy6ljva3zc.webp",
+            "sortOrder": "5",
+            "altText": null
+        },
+        {
+            "id": "cmt3z29qg001e01mtip8bnrwt",
+            "productId": "cmqe8mde5000001p7t7i7dcc6",
+            "imageUrl": "/uploads/products/1781468869579-pjeufotya9g.webp",
+            "sortOrder": "6",
+            "altText": null
+        },
+        {
+            "id": "cmqgebz2h001201p7z0zdkg7c",
+            "productId": "cmqg9dte7000v01p7sr64gdwn",
+            "imageUrl": "/uploads/products/1781590696526-nrcod8dz1sd.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqgebz2h001301p70kjdvifj",
+            "productId": "cmqg9dte7000v01p7sr64gdwn",
+            "imageUrl": "/uploads/products/1781590699335-fwdq783iftd.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqgebz2h001401p74jaqnxpe",
+            "productId": "cmqg9dte7000v01p7sr64gdwn",
+            "imageUrl": "/uploads/products/1781590703852-wj9hpv0ac0b.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqgeezcw001601p79df4lnbg",
+            "productId": "cmqgeezcm001501p7r3ygi7et",
+            "imageUrl": "/uploads/products/1781599581104-el4t6sbw7df.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqgeezcw001701p72yw0e04o",
+            "productId": "cmqgeezcm001501p7r3ygi7et",
+            "imageUrl": "/uploads/products/1781599586248-auneiw78g4d.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqgg2k8t001a01p7k8jc3uye",
+            "productId": "cmqgg2k8p001901p72a7ajgk0",
+            "imageUrl": "/uploads/products/1781602359455-2gresda9t6r.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqgg2k8t001b01p7vvz0q1vr",
+            "productId": "cmqgg2k8p001901p72a7ajgk0",
+            "imageUrl": "/uploads/products/1781602363089-lleic2mtl1.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqgg2k8t001c01p7739byuln",
+            "productId": "cmqgg2k8p001901p72a7ajgk0",
+            "imageUrl": "/uploads/products/1781602365732-uct2nuzpi4q.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqgp6489001j01p79bad40qn",
+            "productId": "cmqggldgo001d01p74awq3idq",
+            "imageUrl": "/uploads/products/1781603179769-2649gwdnbl7.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqgp6489001k01p74oohrbtj",
+            "productId": "cmqggldgo001d01p74awq3idq",
+            "imageUrl": "/uploads/products/1781603367424-8zfpmjixau.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqgp6489001l01p78964zo12",
+            "productId": "cmqggldgo001d01p74awq3idq",
+            "imageUrl": "/uploads/products/1781603369830-5twtwg53xi.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqgpe6ob001n01p74gtiqy7x",
+            "productId": "cmqgpe6o6001m01p7ustug5hu",
+            "imageUrl": "/uploads/products/1781617988550-tyrxowat2j.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqgpe6ob001o01p7s6z9cf57",
+            "productId": "cmqgpe6o6001m01p7ustug5hu",
+            "imageUrl": "/uploads/products/1781617991371-5lpogmxnfx4.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqgpe6ob001p01p7pjfuwfxm",
+            "productId": "cmqgpe6o6001m01p7ustug5hu",
+            "imageUrl": "/uploads/products/1781617994536-getgbjnwcis.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqgpwscw001r01p7lkej06uk",
+            "productId": "cmqgpwscn001q01p752lpg3x7",
+            "imageUrl": "/uploads/products/1781618842885-wxnkulsx3hm.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqgpwscw001s01p7xqt82r12",
+            "productId": "cmqgpwscn001q01p752lpg3x7",
+            "imageUrl": "/uploads/products/1781618848969-m90tzqtffu.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqgpwscw001t01p7riv3ujio",
+            "productId": "cmqgpwscn001q01p752lpg3x7",
+            "imageUrl": "/uploads/products/1781618893823-3v6sjjvy70q.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqgrbjgr001w01p7vmu395n0",
+            "productId": "cmqgr485x001u01p7ryzznj2o",
+            "imageUrl": "/uploads/products/1781620929384-i069rwuxqr.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqhnr1ox002101p7m1ydohlj",
+            "productId": "cmqgrh45u001x01p7oewlvwyn",
+            "imageUrl": "/uploads/products/1781621405846-a9ejcltrrkh.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqhnr1ox002201p7bmvw7ill",
+            "productId": "cmqgrh45u001x01p7oewlvwyn",
+            "imageUrl": "/uploads/products/1781621484364-8abbalf7ufx.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqhnr1ox002301p7td2dl7eb",
+            "productId": "cmqgrh45u001x01p7oewlvwyn",
+            "imageUrl": "/uploads/products/1781621487156-racx2uvyki.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqhnwd5g002501p75d4dx69p",
+            "productId": "cmqhnwd5b002401p76l3o47wt",
+            "imageUrl": "/uploads/products/1781675898786-amk6lz2h4y.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqhnwd5g002601p7ehru73vx",
+            "productId": "cmqhnwd5b002401p76l3o47wt",
+            "imageUrl": "/uploads/products/1781675979646-8q9n5grpyjh.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqhnwd5g002701p75yjkx6rt",
+            "productId": "cmqhnwd5b002401p76l3o47wt",
+            "imageUrl": "/uploads/products/1781675986676-tzzarhymgpf.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqqb10c8002g01p733by121h",
+            "productId": "cmqqb10c4002f01p7hko274j4",
+            "imageUrl": "/uploads/products/1782198503364-v49e2sv0e2j.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqqb10c8002h01p786uoojkr",
+            "productId": "cmqqb10c4002f01p7hko274j4",
+            "imageUrl": "/uploads/products/1782198504967-2n4i0hzebt8.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqqb10c8002i01p7ddfxf82n",
+            "productId": "cmqqb10c4002f01p7hko274j4",
+            "imageUrl": "/uploads/products/1782198526970-vsnnyn3xd1g.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqqb10c8002j01p70p2ut5gj",
+            "productId": "cmqqb10c4002f01p7hko274j4",
+            "imageUrl": "/uploads/products/1782198541013-yng28m0zhnq.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmqz0c2wc003i01p7o341rgbf",
+            "productId": "cmqe9wmcf000s01p7dq6v2by8",
+            "imageUrl": "/uploads/products/1782724780188-lgb5si3bxks.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqz0c2wc003j01p7o26250xm",
+            "productId": "cmqe9wmcf000s01p7dq6v2by8",
+            "imageUrl": "/uploads/products/1782724781436-ha8nqbv8as6.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqz0c2wc003k01p7d6p2q60s",
+            "productId": "cmqe9wmcf000s01p7dq6v2by8",
+            "imageUrl": "/uploads/products/1782724783112-q62miux1f6f.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqz0c2wc003l01p7zg3deqho",
+            "productId": "cmqe9wmcf000s01p7dq6v2by8",
+            "imageUrl": "/uploads/products/1782724784569-owfh0xkka3.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmqz0c2wc003m01p74d2mubx4",
+            "productId": "cmqe9wmcf000s01p7dq6v2by8",
+            "imageUrl": "/uploads/products/1782724786453-tp0o6m8dwkc.webp",
+            "sortOrder": "4",
+            "altText": null
+        },
+        {
+            "id": "cmqz0c2wc003n01p7sk58mc15",
+            "productId": "cmqe9wmcf000s01p7dq6v2by8",
+            "imageUrl": "/uploads/products/1782724788080-jsh6u22hg98.webp",
+            "sortOrder": "5",
+            "altText": null
+        },
+        {
+            "id": "cmqz0h1am003p01p7olsghe6k",
+            "productId": "cmqz0h1ai003o01p7s0sbow8n",
+            "imageUrl": "/uploads/products/1782724982241-7w37qwetmq8.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmqz0h1am003q01p7olkf71pp",
+            "productId": "cmqz0h1ai003o01p7s0sbow8n",
+            "imageUrl": "/uploads/products/1782724983433-hst2uta652t.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmqz0h1am003r01p7e1sdum75",
+            "productId": "cmqz0h1ai003o01p7s0sbow8n",
+            "imageUrl": "/uploads/products/1782724984646-iwrzv269w6.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmqz0h1am003s01p7mpd8f3iu",
+            "productId": "cmqz0h1ai003o01p7s0sbow8n",
+            "imageUrl": "/uploads/products/1782724985766-nc2tu7xp4lc.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmqz0h1am003t01p7l6c8rxka",
+            "productId": "cmqz0h1ai003o01p7s0sbow8n",
+            "imageUrl": "/uploads/products/1782724986897-13w7xzl6upt.webp",
+            "sortOrder": "4",
+            "altText": null
+        },
+        {
+            "id": "cmqz0h1am003u01p7f01ewrrq",
+            "productId": "cmqz0h1ai003o01p7s0sbow8n",
+            "imageUrl": "/uploads/products/1782724988139-lxkol70gxa.webp",
+            "sortOrder": "5",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000m01mtq8m1wud4",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378395905-kh1sx2dhdt8.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmr65rh5n004101p7inb5jbdt",
+            "productId": "cmqe9dcmw000q01p702dikskr",
+            "imageUrl": "/uploads/products/1781470111259-osml23x4b7q.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmr65rh5n004201p7odq5fckp",
+            "productId": "cmqe9dcmw000q01p702dikskr",
+            "imageUrl": "/uploads/products/1782723907104-p5rnkjmtgzj.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmr65rh5n004301p777g174y2",
+            "productId": "cmqe9dcmw000q01p702dikskr",
+            "imageUrl": "/uploads/products/1782723910588-oaaj4en5ws.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmr65rh5n004401p7jwqya24e",
+            "productId": "cmqe9dcmw000q01p702dikskr",
+            "imageUrl": "/uploads/products/1782723912806-u518dqm31vq.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmr65rh5n004501p7ty66c4q9",
+            "productId": "cmqe9dcmw000q01p702dikskr",
+            "imageUrl": "/uploads/products/1782723914158-sh9lss2dkh.webp",
+            "sortOrder": "4",
+            "altText": null
+        },
+        {
+            "id": "cmr65rh5n004601p790rbs41n",
+            "productId": "cmqe9dcmw000q01p702dikskr",
+            "imageUrl": "/uploads/products/1782723915336-f74q8u8dmvn.webp",
+            "sortOrder": "5",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000n01mt6hj4sruy",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378394865-gmne00x9who.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000o01mtx7slq9f5",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378397360-6px8s6e4fl5.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000p01mtdi6hw1oj",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378398984-r1pmef3uk1q.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000q01mt0qet0vg0",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378400182-m6d3hadmm7d.webp",
+            "sortOrder": "4",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000r01mt881n6ult",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378401620-42fspd4ww21.webp",
+            "sortOrder": "5",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000s01mt78wyeo8d",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378403898-kdwylkctd0f.webp",
+            "sortOrder": "6",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000t01mt40c4drfe",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378407826-6xam6mpfzh8.webp",
+            "sortOrder": "7",
+            "altText": null
+        },
+        {
+            "id": "cmr65s8us004e01p7kmfa31tv",
+            "productId": "cmqq9bbed002c01p79mveys3u",
+            "imageUrl": "/uploads/products/1782195667930-vqlvtnqa91b.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmr65s8us004f01p7n8nr3va3",
+            "productId": "cmqq9bbed002c01p79mveys3u",
+            "imageUrl": "/uploads/products/1782206471278-ruri55lvx7e.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmr65s8us004g01p7ffwz0i0d",
+            "productId": "cmqq9bbed002c01p79mveys3u",
+            "imageUrl": "/uploads/products/1782206487831-e4dys55xek7.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmr65s8us004h01p7kvb0hp5x",
+            "productId": "cmqq9bbed002c01p79mveys3u",
+            "imageUrl": "/uploads/products/1782206509105-2w9ncrbtjem.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzat6000u01mtxjpwtanz",
+            "productId": "cmrxzs6yg000001l5lxzhx6ex",
+            "imageUrl": "/uploads/products/1787378409619-3cmo0ijrap8.webp",
+            "sortOrder": "8",
+            "altText": null
+        },
+        {
+            "id": "cmsyyyqch000501mtff3bzgv4",
+            "productId": "cmr1vmcm3003w01p7du72hbf4",
+            "imageUrl": "/uploads/products/1782898247538-gqci1opp1ig.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmsyyyqch000601mt86mugl0b",
+            "productId": "cmr1vmcm3003w01p7du72hbf4",
+            "imageUrl": "/uploads/products/1784840653340-6a1w3o3kukx.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmsyyyqch000701mtb27tmdpk",
+            "productId": "cmr1vmcm3003w01p7du72hbf4",
+            "imageUrl": "/uploads/products/1782898250975-hpjyjo9ih2j.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmsyyyqch000801mt5c1zaolp",
+            "productId": "cmr1vmcm3003w01p7du72hbf4",
+            "imageUrl": "/uploads/products/1782898253824-1tkjj16cgsv.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4000v01mttbif8njf",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851438920-mk4qksnf2t8.webp",
+            "sortOrder": "0",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4000w01mtl0ahlvjf",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851439439-n9svheusk7.webp",
+            "sortOrder": "1",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4000x01mtwhepspw1",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851439887-y96ysbf3adi.webp",
+            "sortOrder": "2",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4000y01mtwr47oext",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851440314-s3toxcpq02.webp",
+            "sortOrder": "3",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4000z01mtgf915ha5",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851440748-b4xbc9b23ti.webp",
+            "sortOrder": "4",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4001001mtkso3keim",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851441091-vhjc6w5eaqo.webp",
+            "sortOrder": "5",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4001101mtzxm7kl9c",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851441537-xs2efnoioy.webp",
+            "sortOrder": "6",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4001201mts6q5bv13",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851441920-qyf2lnd9wrn.webp",
+            "sortOrder": "7",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4001301mt1k2li8gg",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851442261-gdjxm41t4vr.webp",
+            "sortOrder": "8",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4001401mthoa942vc",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851442625-203djawi9k3.webp",
+            "sortOrder": "9",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4001501mtlqtolmgf",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851443016-t1y6192572.webp",
+            "sortOrder": "10",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4001601mtb55wzujd",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851443428-o0xls477i6.webp",
+            "sortOrder": "11",
+            "altText": null
+        },
+        {
+            "id": "cmt3yzzx4001701mtdgfya1zp",
+            "productId": "cmsepw1m4000001phihs6290r",
+            "imageUrl": "/uploads/products/1785851443831-gd05dk5uwj9.webp",
+            "sortOrder": "12",
+            "altText": null
+        }
+    ],
+    "banners": [
+        {
+            "id": "cmr678fmu004m01p72n1w1nch",
+            "title": null,
+            "subtitle": null,
+            "imageUrl": "/uploads/banners/1783159628313-9pdbuf78yfw.webp",
+            "mobileImageUrl": "/uploads/banners/1783159675503-id5dwaz9j4c.webp",
+            "buttonText": null,
+            "buttonLink": null,
+            "sortOrder": "0",
+            "isActive": "t",
+            "createdAt": "2026-07-04 10:08:01.062",
+            "updatedAt": "2026-07-04 10:08:01.062"
+        },
+        {
+            "id": "cmqai7avb000001mm89ana4mw",
+            "title": "Impowering Traditions",
+            "subtitle": "This is the most valuable business for us. ",
+            "imageUrl": "/uploads/banners/1783161459192-znar1exkr6m.webp",
+            "mobileImageUrl": "/uploads/banners/1783161483879-xfmgiku2swl.webp",
+            "buttonText": "Explore Now ",
+            "buttonLink": "/shop",
+            "sortOrder": "0",
+            "isActive": "t",
+            "createdAt": "2026-06-12 05:46:26.375",
+            "updatedAt": "2026-07-04 10:38:55.012"
+        }
+    ],
+    "pages": [
+        {
+            "id": "cmqaoq4fm000101pcjkzz1xfh",
+            "slug": "faq",
+            "title": "Frequently Asked Questions",
+            "subtitle": "Find answers to common questions",
+            "sections": [
+                {
+                    "id": "faq-s1",
+                    "order": 1,
+                    "title": "Ordering & Payment",
+                    "content": "<h2>Ordering & Payment</h2><p><strong>Q: How do I place an order?</strong><br/>A: Browse our products, add to cart, and complete checkout. You can also order via WhatsApp.</p><p><strong>Q: What payment methods do you accept?</strong><br/>A: We accept Cash on Delivery, bKash, Nagad, and bank transfer.</p>"
+                },
+                {
+                    "id": "faq-s2",
+                    "order": 2,
+                    "title": "Shipping & Returns",
+                    "content": "<h2>Shipping & Returns</h2><p><strong>Q: How long does delivery take?</strong><br/>A: 3-5 business days within Dhaka, 5-7 days outside Dhaka.</p><p><strong>Q: What is your return policy?</strong><br/>A: We accept returns within 7 days of delivery for unused items.</p>"
+                }
+            ],
+            "metaTitle": "FAQ - Shilperhaat",
+            "metaDescription": "Frequently asked questions",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000201pcl3ph07h7",
+            "slug": "contact",
+            "title": "Contact Us",
+            "subtitle": "We would love to hear from you",
+            "sections": [
+                {
+                    "id": "contact-s1",
+                    "order": 1,
+                    "title": "Get In Touch",
+                    "content": "<h2>Get In Touch</h2><p>📞 Phone: 01700000000</p><p>✉️ Email: info@shilperhaat.com</p><p>📍 Address: Dhaka, Bangladesh</p><p>🕐 Hours: Monday - Saturday, 10AM - 8PM</p>"
+                },
+                {
+                    "id": "contact-s2",
+                    "order": 2,
+                    "title": "Order via WhatsApp",
+                    "content": "<h2>Order via WhatsApp</h2><p>For quick orders and inquiries, message us on WhatsApp at +880-1700-000000. Our team responds within 30 minutes during business hours.</p>"
+                }
+            ],
+            "metaTitle": "Contact Us - Shilperhaat",
+            "metaDescription": "Contact Shilperhaat",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000301pcoskjoyso",
+            "slug": "privacy-policy",
+            "title": "Privacy Policy",
+            "subtitle": "How we collect and use your information",
+            "sections": [
+                {
+                    "id": "privacy-policy-s1",
+                    "order": 1,
+                    "title": "Information We Collect",
+                    "content": "<h2>Information We Collect</h2><p>We collect information you provide when placing orders including name, phone number, email address, and delivery address. We also collect browsing data to improve our website.</p>"
+                },
+                {
+                    "id": "privacy-policy-s2",
+                    "order": 2,
+                    "title": "How We Use Your Information",
+                    "content": "<h2>How We Use Your Information</h2><p>Your information is used only to process orders and improve our services. We never sell your personal data to third parties. Your data is stored securely and protected.</p>"
+                }
+            ],
+            "metaTitle": "Privacy Policy - Shilperhaat",
+            "metaDescription": "Privacy policy",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000401pcep025yfn",
+            "slug": "terms-of-use",
+            "title": "Terms of Use",
+            "subtitle": "Terms and conditions for using Shilperhaat",
+            "sections": [
+                {
+                    "id": "terms-of-use-s1",
+                    "order": 1,
+                    "title": "Terms & Conditions",
+                    "content": "<h2>Terms & Conditions</h2><p>By using Shilperhaat, you agree to these terms. All products are handmade and may have slight variations from images shown. Prices are in Bangladeshi Taka (৳).</p>"
+                },
+                {
+                    "id": "terms-of-use-s2",
+                    "order": 2,
+                    "title": "User Responsibilities",
+                    "content": "<h2>User Responsibilities</h2><p>Users must provide accurate delivery information. Shilperhaat is not responsible for delays caused by incorrect addresses. All disputes are subject to Bangladesh law.</p>"
+                }
+            ],
+            "metaTitle": "Terms of Use - Shilperhaat",
+            "metaDescription": "Terms of use",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000501pcaqaf6zfe",
+            "slug": "refund-policy",
+            "title": "Refund Policy",
+            "subtitle": "Our refund and exchange policy",
+            "sections": [
+                {
+                    "id": "refund-policy-s1",
+                    "order": 1,
+                    "title": "Return & Refund Policy",
+                    "content": "<h2>Return & Refund Policy</h2><p>We accept returns within 7 days of delivery. Items must be unused and in original condition. To initiate a return, contact us via WhatsApp or email with your order number and reason.</p>"
+                },
+                {
+                    "id": "refund-policy-s2",
+                    "order": 2,
+                    "title": "Refund Process",
+                    "content": "<h2>Refund Process</h2><p>Approved refunds are processed within 3-5 business days. Refunds are issued via the original payment method. Delivery charges are non-refundable unless the item was defective.</p>"
+                }
+            ],
+            "metaTitle": "Refund Policy - Shilperhaat",
+            "metaDescription": "Refund policy",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000601pcwxjj6e72",
+            "slug": "delivery-policy",
+            "title": "Delivery Policy",
+            "subtitle": "Shipping and delivery information",
+            "sections": [
+                {
+                    "id": "delivery-policy-s1",
+                    "order": 1,
+                    "title": "Delivery Areas & Times",
+                    "content": "<h2>Delivery Areas & Times</h2><p>We deliver across Bangladesh. Dhaka city: 2-3 business days. Outside Dhaka: 4-6 business days. We use trusted courier partners for all deliveries.</p>"
+                },
+                {
+                    "id": "delivery-policy-s2",
+                    "order": 2,
+                    "title": "Delivery Charges",
+                    "content": "<h2>Delivery Charges</h2><p>Free delivery on orders above ৳1,500. Below ৳1,500: ৳60 inside Dhaka, ৳120 outside Dhaka. Express delivery available on request for additional charge.</p>"
+                }
+            ],
+            "metaTitle": "Delivery Policy - Shilperhaat",
+            "metaDescription": "Delivery policy",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000701pc8m0pdk4y",
+            "slug": "shipping-info",
+            "title": "Shipping Info",
+            "subtitle": "Everything about our shipping process",
+            "sections": [
+                {
+                    "id": "shipping-info-s1",
+                    "order": 1,
+                    "title": "How We Ship",
+                    "content": "<h2>How We Ship</h2><p>All orders are carefully packed to protect products during transit. We use Sundarban Courier, Pathao, and Redx for reliable delivery across Bangladesh.</p>"
+                },
+                {
+                    "id": "shipping-info-s2",
+                    "order": 2,
+                    "title": "Tracking Your Order",
+                    "content": "<h2>Tracking Your Order</h2><p>After shipment, you will receive a tracking number via SMS and email. Use this to track your order on the courier's website. Contact us if you face any issues.</p>"
+                }
+            ],
+            "metaTitle": "Shipping Info - Shilperhaat",
+            "metaDescription": "Shipping information",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000801pcvlu559am",
+            "slug": "support",
+            "title": "Support Center",
+            "subtitle": "We are here to help you",
+            "sections": [
+                {
+                    "id": "support-s1",
+                    "order": 1,
+                    "title": "How Can We Help?",
+                    "content": "<h2>How Can We Help?</h2><p>Our support team is available Monday to Saturday, 10AM to 8PM. Reach us via phone, WhatsApp, or email. Average response time is under 1 hour during business hours.</p>"
+                },
+                {
+                    "id": "support-s2",
+                    "order": 2,
+                    "title": "Support Channels",
+                    "content": "<h2>Support Channels</h2><p>📞 Call: 01700000000<br/>💬 WhatsApp: +880-1700-000000<br/>✉️ Email: support@shilperhaat.com<br/>For urgent issues, WhatsApp is the fastest way to reach us.</p>"
+                }
+            ],
+            "metaTitle": "Support - Shilperhaat",
+            "metaDescription": "Customer support",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000901pcsmfht5x6",
+            "slug": "how-to-order",
+            "title": "How to Order",
+            "subtitle": "Simple steps to place your order",
+            "sections": [
+                {
+                    "id": "how-to-order-s1",
+                    "order": 1,
+                    "title": "Online Ordering Steps",
+                    "content": "<h2>Online Ordering Steps</h2><p><strong>Step 1:</strong> Browse products and select what you like.<br/><strong>Step 2:</strong> Click \"Add to Cart\" or \"Buy Now\".<br/><strong>Step 3:</strong> Enter your delivery address and phone number.<br/><strong>Step 4:</strong> Select Cash on Delivery or online payment.<br/><strong>Step 5:</strong> Confirm your order. Done!</p>"
+                },
+                {
+                    "id": "how-to-order-s2",
+                    "order": 2,
+                    "title": "Order via WhatsApp",
+                    "content": "<h2>Order via WhatsApp</h2><p>Prefer to order by phone? Simply send us a WhatsApp message with the product name and your delivery address. Our team will confirm your order and arrange delivery.</p>"
+                }
+            ],
+            "metaTitle": "How to Order - Shilperhaat",
+            "metaDescription": "How to order",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000a01pcidnokiv8",
+            "slug": "track-order",
+            "title": "Track Your Order",
+            "subtitle": "Check the status of your order",
+            "sections": [
+                {
+                    "id": "track-order-s1",
+                    "order": 1,
+                    "title": "Track Your Order",
+                    "content": "<h2>Track Your Order</h2><p>Enter your order number or phone number below to check your order status. You can also contact us directly via WhatsApp at +880-1700-000000 for order updates.</p>"
+                },
+                {
+                    "id": "track-order-s2",
+                    "order": 2,
+                    "title": "Order Status Guide",
+                    "content": "<h2>Order Status Guide</h2><p><strong>Processing:</strong> Order received and being prepared.<br/><strong>Shipped:</strong> Order handed to courier.<br/><strong>Out for Delivery:</strong> Order is on its way.<br/><strong>Delivered:</strong> Order successfully delivered.</p>"
+                }
+            ],
+            "metaTitle": "Track Order - Shilperhaat",
+            "metaDescription": "Track your order",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000b01pctiapzi0t",
+            "slug": "blog",
+            "title": "Blog",
+            "subtitle": "Stories, tips and news from Shilperhaat",
+            "sections": [
+                {
+                    "id": "blog-s1",
+                    "order": 1,
+                    "title": "Latest Articles",
+                    "content": "<h2>Latest Articles</h2><p>Our blog is coming soon. We will share stories about our artisans, textile traditions, and tips for caring for your handcraft products.</p>"
+                }
+            ],
+            "metaTitle": "Blog - Shilperhaat",
+            "metaDescription": "Shilperhaat blog",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000c01pcel6fzufm",
+            "slug": "careers",
+            "title": "Careers",
+            "subtitle": "Join the Shilperhaat team",
+            "sections": [
+                {
+                    "id": "careers-s1",
+                    "order": 1,
+                    "title": "Work With Us",
+                    "content": "<h2>Work With Us</h2><p>We are always looking for passionate people who believe in preserving Bangladesh's craft heritage. If you are interested in joining our team, send your CV to careers@shilperhaat.com.</p>"
+                },
+                {
+                    "id": "careers-s2",
+                    "order": 2,
+                    "title": "Current Openings",
+                    "content": "<h2>Current Openings</h2><p>No current openings. Check back soon or send us your profile for future opportunities.</p>"
+                }
+            ],
+            "metaTitle": "Careers - Shilperhaat",
+            "metaDescription": "Career opportunities",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000d01pclerix01o",
+            "slug": "press",
+            "title": "Press",
+            "subtitle": "Media resources and press releases",
+            "sections": [
+                {
+                    "id": "press-s1",
+                    "order": 1,
+                    "title": "Press & Media",
+                    "content": "<h2>Press & Media</h2><p>For media inquiries, interviews, or press resources, contact our team at press@shilperhaat.com. We are happy to share our story about promoting Bangladeshi handcraft traditions.</p>"
+                }
+            ],
+            "metaTitle": "Press - Shilperhaat",
+            "metaDescription": "Press and media",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fm000e01pcvlh1ssxx",
+            "slug": "account",
+            "title": "My Account",
+            "subtitle": "Manage your account",
+            "sections": [
+                {
+                    "id": "account-s1",
+                    "order": 1,
+                    "title": "My Account",
+                    "content": ""
+                }
+            ],
+            "metaTitle": "My Account - Shilperhaat",
+            "metaDescription": "My account",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 08:49:02.193"
+        },
+        {
+            "id": "cmqaoq4fl000001pc77oufolg",
+            "slug": "about",
+            "title": "About Us",
+            "subtitle": "Our story and mission",
+            "sections": [
+                {
+                    "id": "about-s1",
+                    "order": 1,
+                    "title": "Main Content",
+                    "content": "<h2>Who We Are</h2><p>Shilperhaat is Bangladesh's premier handcraft textile marketplace, dedicated to preserving and promoting traditional Bengali craftsmanship. We connect skilled artisans directly with customers who value authentic, hand-crafted textiles.</p>"
+                },
+                {
+                    "id": "about-s2",
+                    "order": 2,
+                    "title": "Additional Content",
+                    "content": "<h2>Our Mission</h2><p>Our mission is to bring Bangladesh's rich textile heritage to every home. We work with master artisans across the country to offer premium quality Katha, Chadar, Nakshi Katha, Blankets, and Muslin products.</p>"
+                }
+            ],
+            "metaTitle": "About Us - Shilperhaat",
+            "metaDescription": "Learn about Shilperhaat",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 12:03:52.269"
+        },
+        {
+            "id": "cmqb8pmk1000001lr314d5b7c",
+            "slug": "naim",
+            "title": "About",
+            "subtitle": "",
+            "sections": [
+                {
+                    "id": "naim-s1",
+                    "order": 1,
+                    "title": "Main Content",
+                    "content": "<p>Write the content for About here.</p>"
+                }
+            ],
+            "metaTitle": "About - Shilperhaat",
+            "metaDescription": "About",
+            "isPublished": "t",
+            "updatedAt": "2026-06-12 18:08:31.345"
+        }
+    ],
+    "reviews": [
+        {
+            "id": "cmsfm4kfv000r01phhh8n9r4y",
+            "name": "naim",
+            "title": null,
+            "rating": "5",
+            "content": "I'm really happy with this Complete Baby Feeding Set! The quality is excellent, and everything arrived exactly as shown in the pictures.\nThe feeding bottle, silicone bowl, spoon, fruit feeder, bib, and all the other accessories are well-made, baby-friendly, and very useful for daily feeding. It's so convenient to have everything in one complete set instead of buying each item separately.\nThe packaging was secure and premium, and the product is definitely worth the price. I highly recommend this set to any parent looking for a complete feeding solution or a thoughtful baby gift.\nThank you, Shilperhaat! I'll definitely shop again. ❤️",
+            "avatarUrl": null,
+            "role": null,
+            "isVisible": "f",
+            "sortOrder": "0",
+            "createdAt": "2026-08-05 04:54:32.827",
+            "updatedAt": "2026-08-05 04:54:32.827",
+            "productId": "cmsepw1m4000001phihs6290r"
+        }
+    ],
+    "coupons": [
+        {
+            "id": "cmqauv9sh000401pgxwz4lzsl",
+            "code": "TEST10",
+            "type": "PERCENTAGE",
+            "value": "100.00",
+            "minOrderAmount": "0.00",
+            "maxUses": "100",
+            "usedCount": "0",
+            "isActive": "t",
+            "expiresAt": "2026-06-13 23:59:59",
+            "description": "",
+            "createdAt": "2026-06-12 11:41:00.113",
+            "updatedAt": "2026-06-12 11:41:00.113"
+        }
+    ],
+    "site_content": [
+        {
+            "key": "site-layout",
+            "value": {
+                "email": "shilperhaat@gmail.com",
+                "phone": "01606547497",
+                "address": "Baridhara,dhaka",
+                "logoUrl": "/uploads/site/1781687151903-4ithwhcnq57.webp",
+                "tagline": "Handcraft Marketplace",
+                "navItems": [
+                    {
+                        "href": "/shop?category=katha",
+                        "label": "Katha"
+                    },
+                    {
+                        "href": "/shop?category=nakshi-katha",
+                        "label": "Nakshi Katha"
+                    },
+                    {
+                        "href": "/shop?category=chador",
+                        "label": "Chadar",
+                        "dropdown": [
+                            {
+                                "href": "/shop?category=chador&filter=cotton",
+                                "label": "Cotton Chadar"
+                            },
+                            {
+                                "href": "/shop?category=chador&filter=jamdani",
+                                "label": "Jamdani Chadar"
+                            },
+                            {
+                                "href": "/shop?category=chador&filter=muslin",
+                                "label": "Muslin Chadar"
+                            }
+                        ]
+                    },
+                    {
+                        "href": "/shop?category=kambal",
+                        "label": "Blanket",
+                        "dropdown": [
+                            {
+                                "href": "/shop?category=kambal&filter=wool",
+                                "label": "Wool Blanket"
+                            },
+                            {
+                                "href": "/shop?category=kambal&filter=cotton",
+                                "label": "Cotton Blanket"
+                            }
+                        ]
+                    },
+                    {
+                        "href": "/shop?category=muslin",
+                        "label": "Muslin"
+                    },
+                    {
+                        "href": "/shop?sort=newest",
+                        "label": "New Arrivals"
+                    },
+                    {
+                        "href": "/shop?filter=offer",
+                        "label": "Offer Zone"
+                    },
+                    {
+                        "href": "/shop",
+                        "label": "Collections",
+                        "dropdown": [
+                            {
+                                "href": "/shop?category=katha",
+                                "label": "Katha Collection"
+                            },
+                            {
+                                "href": "/shop?category=nakshi-katha",
+                                "label": "Nakshi Katha Collection"
+                            },
+                            {
+                                "href": "/shop?category=gamcha",
+                                "label": "Gamcha Collection"
+                            }
+                        ]
+                    },
+                    {
+                        "href": "/about",
+                        "label": "About"
+                    }
+                ],
+                "siteName": "Shilperhaat",
+                "logoWidth": 140,
+                "logoHeight": 50,
+                "logoLetter": "S",
+                "twitterUrl": "",
+                "facebookUrl": "https://facebook.com/shilperhaat",
+                "footerLinks": {
+                    "shop": [],
+                    "policy": [
+                        {
+                            "href": "/privacy-policy",
+                            "label": "Privacy Policy"
+                        },
+                        {
+                            "href": "/terms-of-use",
+                            "label": "Terms of Use"
+                        },
+                        {
+                            "href": "/refund-policy",
+                            "label": "Refund Policy"
+                        },
+                        {
+                            "href": "/delivery-policy",
+                            "label": "Delivery Policy"
+                        }
+                    ],
+                    "support": [
+                        {
+                            "href": "/track-order",
+                            "label": "Order Tracking"
+                        },
+                        {
+                            "href": "/delivery-policy",
+                            "label": "Payment"
+                        },
+                        {
+                            "href": "/shipping-info",
+                            "label": "Shipping"
+                        },
+                        {
+                            "href": "/faq",
+                            "label": "FAQ"
+                        }
+                    ],
+                    "information": [
+                        {
+                            "href": "/about",
+                            "label": "About Us"
+                        },
+                        {
+                            "href": "/contact",
+                            "label": "Contact Us"
+                        },
+                        {
+                            "href": "/about",
+                            "label": "Company Information"
+                        },
+                        {
+                            "href": "/terms-of-use",
+                            "label": "Terms & Conditions"
+                        },
+                        {
+                            "href": "/privacy-policy",
+                            "label": "Privacy Policy"
+                        }
+                    ]
+                },
+                "instagramUrl": "https://instagram.com/shilperhaat",
+                "whatsappNumber": "+8801789117183",
+                "footerCopyright": "© 2026 Shilperhaat. All rights reserved.",
+                "footerDescription": "Bringing Bangladesh's traditional handcraft textiles to your doorstep. Premium-quality Katha, Chadar & Blankets."
+            },
+            "updatedAt": "2026-07-22 06:18:21.932"
+        },
+        {
+            "key": "contact-widget",
+            "value": {
+                "phoneNumber": "01606547497",
+                "whatsappUrl": "https://wa.me/8801789117183",
+                "emailAddress": "shilperhaat01@gmail.com",
+                "messengerUrl": "https://m.me/616518841553069",
+                "widgetEnabled": true,
+                "buttonPosition": "bottom-right",
+                "welcomeMessage": "আমাদের সাথে যোগাযোগ করুন"
+            },
+            "updatedAt": "2026-07-22 06:18:40.287"
+        }
+    ],
+    "site_settings": [
+        {
+            "id": "cmqav6c7v000501pgwfzkl94r",
+            "siteName": "Shilperhaat",
+            "logoUrl": "/uploads/brand/1781274194261-uja62no351a.webp",
+            "faviconUrl": null,
+            "footerCopyright": null,
+            "whatsappNumber": "https://wa.me/01789117183",
+            "socialLinks": null,
+            "deliveryCharge": "0.00",
+            "freeDeliveryMin": null,
+            "updatedAt": "2026-06-29 09:33:53.67"
+        }
+    ]
+}

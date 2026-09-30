@@ -1,0 +1,15 @@
+{
+  "name": "shilperhaat-tools",
+  "private": true,
+  "description": "Build helpers for the Shilperhaat WordPress theme (dev-time only; nothing here runs in production)",
+  "scripts": {
+    "build:css": "node build-css.js",
+    "zip": "bash zip.sh"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "tailwindcss": "4.3.0",
+    "playwright-core": "1.49.0"
+  }
+}

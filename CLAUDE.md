@@ -19,6 +19,19 @@
 - `data/seed/shilperhaat_seed.sql`: লাইভ PostgreSQL ডাম্প (pg_dump)। স্কিমা সব টেবিলের আছে; ডেটা আছে শুধু products, product_images, categories, banners, blog_posts, pages, reviews, coupons, site_content, site_settings। `orders`, `order_items`, `admin_users`, `admin_page_access` ও `_prisma_migrations`-এর ডেটা ইচ্ছাকৃতভাবে খালি।
 - `assets/uploads/`: লাইভ সাইটের আপলোড (banners, blog, brand, categories, products, site, videos)। ডেটাবেসের `imageUrl` পাথ `/uploads/...` ধরনের; WordPress মিডিয়া/আপলোডে ম্যাপ করতে হবে।
 
+## চূড়ান্ত আর্কিটেকচার (অনুমোদিত সিদ্ধান্ত)
+- **হাইব্রিড:** WooCommerce শুধু ব্যাকএন্ড ইঞ্জিন (প্রোডাক্ট, স্টক, অর্ডার, কুপন)। ফ্রন্টএন্ড পুরোপুরি কাস্টম থিমে; Woo-র কোনো ফ্রন্টএন্ড CSS/JS/টেমপ্লেট লোড হয় না। থিম শুধু Woo CRUD API (`wc_get_products`, `WC_Product`, `wc_create_order`) ব্যবহার করে।
+- কার্ট ব্রাউজারে (`localStorage` কী `sh_cart`)। চেকআউট সাবমিট নিজস্ব REST এন্ডপয়েন্টে (`/wp-json/shilperhaat/v1/orders`), যা সরাসরি Woo অর্ডার তৈরি করে। Woo সেশন/কার্ট/চেকআউট পেজ ব্যবহার হয় না।
+- শুধু COD। অনলাইন পেমেন্ট, ইমেইল নোটিফিকেশন, ব্লগ **নেই** (ব্লগ লিংকও হেডার/ফুটার/মোবাইল মেনু থেকে সরানো)।
+- অ্যাডমিন প্যানেল বর্তমান Next.js অ্যাডমিনের নকল (ইংরেজি UI, `/admin` রুটে, প্লাগিনে), ডেটা Woo + প্লাগিন টেবিল থেকে। পেজ-ভিত্তিক অ্যাক্সেস WP ইউজার/ক্যাপাবিলিটিতে।
+- কাস্টম টেবিল (`wp_sh_*`): product_images, reviews, banners, pages, site_content। ছবি `wp-content/uploads/shilperhaat/` এ; ডেটাবেসের `/uploads/...` পাথ থিম হেল্পার রিজলভ করে।
+- ডিপ্লয়: Coolify-তে সাধারণ WordPress + MySQL। থিম ও প্লাগিন zip আপলোড করে অ্যাক্টিভ করা হয় (Docker কাস্টমাইজেশন নেই); পরে cPanel-এও চলবে। `WooCommerce` আলাদাভাবে ইনস্টল করতে হয়।
+- Tailwind CSS ডেভ-টাইমে কম্পাইল করে `assets/css/app.css` কমিট করা থাকে; রানটাইমে Node লাগে না (`tools/` দেখো)।
+
+## রিপোর কাঠামো (নতুন)
+- `wp-content/themes/shilperhaat`, `wp-content/plugins/shilperhaat-cms`: ডেলিভারেবল।
+- `tools/`: বিল্ড/zip/তুলনা স্ক্রিপ্ট। `docs/`: ইনস্টল গাইড।
+
 ## টার্গেট স্ট্যাক ও ডিপ্লয়
 - PHP 8.1+, MySQL/MariaDB, WordPress (সর্বশেষ)। থিম বিল্ড টুল ছাড়া চলবে এমন সরল PHP/CSS/JS পছন্দনীয়।
 - ডিপ্লয়: Coolify-তে WordPress + MySQL কনটেইনার অথবা সাধারণ cPanel হোস্টিং।
