@@ -76,3 +76,25 @@ remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
 remove_action( 'wp_footer', 'wp_enqueue_global_styles', 1 );
 
 require_once get_template_directory() . '/inc/render.php';
+
+/* Drop inline head output that belongs to block themes / WooCommerce front-end (keeps the page source identical to the original markup). */
+add_action( 'init', static function () {
+	remove_action( 'wp_head', 'wp_print_font_faces', 50 );
+	remove_action( 'wp_head', 'wp_print_font_faces_from_style_variations', 50 );
+	remove_action( 'wp_head', 'wp_enqueue_global_styles_css_custom_properties' );
+}, 20 );
+add_filter( 'wp_img_tag_add_auto_sizes', '__return_false' );
+add_action( 'wp_enqueue_scripts', static function () {
+	foreach ( [ 'wp-img-auto-sizes-contain', 'woocommerce-inline' ] as $h ) {
+		wp_dequeue_style( $h );
+		wp_deregister_style( $h );
+	}
+}, 101 );
+add_action( 'wp_head', static function () {
+	ob_start( static fn( $html ) => preg_replace( '#<style>\s*\.woocommerce-product-gallery\{[^<]*</style>#', '', $html ) );
+}, 0 );
+add_action( 'wp_head', static function () {
+	if ( ob_get_level() ) {
+		ob_end_flush();
+	}
+}, 9999 );

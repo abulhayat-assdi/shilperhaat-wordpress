@@ -31,7 +31,24 @@ class SH_Install {
 		}
 		add_option( 'sh_settings', sh_default_settings(), '', false );
 		update_option( 'sh_db_version', self::DB_VERSION );
+		self::setup_woo();
+		// Import the bundled shop content once, on the next admin page load (WooCommerce must be loaded by then).
+		if ( ! get_option( 'sh_imported_at' ) ) {
+			update_option( 'sh_needs_import', 1, false );
+		}
 		flush_rewrite_rules();
+	}
+
+	/** Store defaults for a Bangladesh COD shop; skips WooCommerce's onboarding. */
+	public static function setup_woo(): void {
+		update_option( 'woocommerce_currency', 'BDT' );
+		update_option( 'woocommerce_default_country', 'BD' );
+		update_option( 'woocommerce_calc_taxes', 'no' );
+		update_option( 'woocommerce_manage_stock', 'yes' );
+		update_option( 'woocommerce_task_list_hidden', 'yes' );
+		update_option( 'woocommerce_task_list_complete', 'yes' );
+		update_option( 'woocommerce_feature_order_attribution_enabled', 'no' );
+		delete_transient( '_wc_activation_redirect' );
 	}
 
 	public static function maybe_upgrade(): void {

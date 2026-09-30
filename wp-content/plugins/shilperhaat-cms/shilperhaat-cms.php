@@ -30,11 +30,16 @@ require_once SH_CMS_DIR . 'includes/class-sh-seo.php';
 require_once SH_CMS_DIR . 'includes/class-sh-importer.php';
 require_once SH_CMS_DIR . 'includes/class-sh-courier.php';
 require_once SH_CMS_DIR . 'admin/class-sh-admin.php';
+require_once SH_CMS_DIR . 'admin/class-sh-wpadmin.php';
 
 register_activation_hook( __FILE__, [ 'SH_Install', 'activate' ] );
 
 add_action( 'plugins_loaded', static function () {
 	SH_Install::maybe_upgrade();
+	SH_WpAdmin::init();
+	if ( ! class_exists( 'WooCommerce' ) ) {
+		return; // storefront stays inert until WooCommerce is active (an admin notice explains why)
+	}
 	SH_Router::init();
 	SH_Rest::init();
 	SH_Orders::init();

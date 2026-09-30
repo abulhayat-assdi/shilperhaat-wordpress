@@ -79,8 +79,9 @@ class SH_Router {
 		}
 		// Legacy media URLs (/uploads/products/x.webp) → real file location.
 		if ( str_starts_with( $path, 'uploads/' ) ) {
-			$rel = substr( $path, 8 );
-			if ( ! str_contains( $rel, '..' ) && file_exists( sh_uploads_dir() . '/' . rawurldecode( $rel ) ) ) {
+			$rel     = substr( $path, 8 );
+			$decoded = rawurldecode( $rel );
+			if ( ! str_contains( $decoded, '..' ) && ! str_contains( $decoded, "\0" ) && is_file( sh_uploads_dir() . '/' . $decoded ) ) {
 				wp_redirect( sh_uploads_url() . '/' . $rel, 301 ); // phpcs:ignore
 				exit;
 			}
