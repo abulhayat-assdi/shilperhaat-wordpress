@@ -1,0 +1,8 @@
+.git
+.next
+node_modules
+.env*
+public/uploads
+npm-debug.log*
+*.tsbuildinfo
+docker-entrypoint.sh

@@ -1,0 +1,257 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model AdminUser {
+  id           String            @id @default(cuid())
+  name         String
+  email        String            @unique
+  passwordHash String
+  role         String            @default("admin")
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  pageAccess   AdminPageAccess[]
+
+  @@map("admin_users")
+}
+
+model AdminPageAccess {
+  id        String    @id @default(cuid())
+  adminId   String
+  pageKey   String
+  admin     AdminUser @relation(fields: [adminId], references: [id], onDelete: Cascade)
+  createdAt DateTime  @default(now())
+
+  @@unique([adminId, pageKey])
+  @@map("admin_page_access")
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  name      String
+  slug      String    @unique
+  imageUrl  String?
+  isFeatured Boolean  @default(false)
+  sortOrder Int       @default(0)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  products  Product[]
+
+  @@map("categories")
+}
+
+model Product {
+  id             String         @id @default(cuid())
+  title          String
+  slug           String         @unique
+  description    String?        @db.Text
+  price          Decimal        @db.Decimal(10, 2)
+  compareAtPrice Decimal?       @db.Decimal(10, 2)
+  stock          Int            @default(0)
+  categoryId     String?
+  isFeatured     Boolean        @default(false)
+  isBestSelling  Boolean        @default(false)
+  status         ProductStatus  @default(ACTIVE)
+  sku            String?        @unique
+  tags           String[]
+  videoUrl       String?
+  youtubeUrl     String?
+  youtubeVideoId String?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  category       Category?      @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  images         ProductImage[]
+  orderItems     OrderItem[]
+  reviews        Review[]
+
+  @@map("products")
+}
+
+model ProductImage {
+  id        String  @id @default(cuid())
+  productId String
+  imageUrl  String
+  sortOrder Int     @default(0)
+  altText   String?
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@map("product_images")
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  name      String
+  title     String?
+  rating    Int      @default(5)
+  content   String   @db.Text
+  avatarUrl String?
+  role      String?
+  isVisible Boolean  @default(true)
+  sortOrder Int      @default(0)
+  // Optional product link: set for customer product reviews,
+  // null for site-wide testimonials shown on the homepage.
+  productId String?
+  product   Product? @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([productId])
+  @@map("reviews")
+}
+
+model Order {
+  id                    String      @id @default(cuid())
+  orderNumber           String      @unique
+  customerName          String
+  phone                 String
+  address               String      @db.Text
+  notes                 String?     @db.Text
+  subtotal              Decimal     @db.Decimal(10, 2)
+  deliveryCharge        Decimal     @db.Decimal(10, 2) @default(0)
+  total                 Decimal     @db.Decimal(10, 2)
+  paymentMethod         String      @default("COD")
+  status                OrderStatus @default(PENDING)
+  adminNote             String?     @db.Text
+  courierConsignmentId  String?
+  courierTrackingCode   String?
+  courierSentAt         DateTime?
+  courierStatus         String?
+  couponCode            String?
+  discount              Decimal     @db.Decimal(10, 2) @default(0)
+  createdAt             DateTime    @default(now())
+  updatedAt             DateTime    @updatedAt
+  items                 OrderItem[]
+
+  @@map("orders")
+}
+
+model OrderItem {
+  id           String  @id @default(cuid())
+  orderId      String
+  productId    String?
+  productTitle String
+  productImage String?
+  price        Decimal @db.Decimal(10, 2)
+  quantity     Int
+  lineTotal    Decimal @db.Decimal(10, 2)
+  order        Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product      Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+
+  @@map("order_items")
+}
+
+model Banner {
+  id            String   @id @default(cuid())
+  title         String?
+  subtitle      String?
+  imageUrl      String
+  mobileImageUrl String?
+  buttonText    String?
+  buttonLink    String?
+  sortOrder     Int      @default(0)
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@map("banners")
+}
+
+model SiteSetting {
+  id              String   @id @default(cuid())
+  siteName        String   @default("Shilperhaat")
+  logoUrl         String?
+  faviconUrl      String?
+  footerCopyright String?
+  whatsappNumber  String?
+  socialLinks     Json?
+  deliveryCharge  Decimal  @db.Decimal(10, 2) @default(0)
+  freeDeliveryMin Decimal? @db.Decimal(10, 2)
+  updatedAt       DateTime @updatedAt
+
+  @@map("site_settings")
+}
+
+model Coupon {
+  id             String       @id @default(cuid())
+  code           String       @unique
+  type           DiscountType @default(FIXED)
+  value          Decimal      @db.Decimal(10, 2)
+  minOrderAmount Decimal      @db.Decimal(10, 2) @default(0)
+  maxUses        Int?
+  usedCount      Int          @default(0)
+  isActive       Boolean      @default(true)
+  expiresAt      DateTime?
+  description    String       @default("")
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  @@map("coupons")
+}
+
+model Page {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  title           String
+  subtitle        String   @default("")
+  sections        Json
+  metaTitle       String   @default("")
+  metaDescription String   @default("")
+  isPublished     Boolean  @default(true)
+  updatedAt       DateTime @updatedAt
+
+  @@map("pages")
+}
+
+model BlogPost {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  excerpt     String   @default("") @db.Text
+  content     String   @db.Text
+  coverImage  String   @default("")
+  author      String   @default("")
+  category    String   @default("")
+  tags        String[]
+  isPublished Boolean  @default(true)
+  readTime    Int      @default(3)
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("blog_posts")
+}
+
+model SiteContent {
+  key       String   @id
+  value     Json
+  updatedAt DateTime @updatedAt
+
+  @@map("site_content")
+}
+
+enum DiscountType {
+  PERCENTAGE
+  FIXED
+}
+
+enum ProductStatus {
+  ACTIVE
+  INACTIVE
+  OUT_OF_STOCK
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}

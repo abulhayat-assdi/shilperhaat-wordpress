@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.local
+    volumes:
+      # Persist uploaded images across container rebuilds
+      - uploads_data:/app/public/uploads
+    restart: unless-stopped
+
+volumes:
+  uploads_data:
+    driver: local
