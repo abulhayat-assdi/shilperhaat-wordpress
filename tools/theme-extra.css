@@ -94,3 +94,8 @@
 .sh-b-call{background-color:#1a3a6b}.sh-b-call:hover{background-color:#142d55}
 .sh-tag{font-size:12px;padding:4px 12px;background-color:#FFF0F0;color:#800000;border-radius:4px;text-decoration:none;font-family:'Open Sans',sans-serif;font-weight:500;border:1px solid #f5d0d0;transition:background-color .2s,color .2s}
 .sh-tag:hover{background-color:#800000;color:#fff}
+
+/* ── Checkout ── */
+.sh-ss-opt:hover{background:#fff8f0!important}
+.sh-co-link:hover{text-decoration:underline!important}
+[data-err]:empty{display:none}

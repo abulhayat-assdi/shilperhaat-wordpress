@@ -29,7 +29,7 @@ add_action( 'wp_enqueue_scripts', static function () {
 		'shop'        => [ 'shop' ],
 		'product'     => [ 'product' ],
 		'cart'        => [ 'cart-page' ],
-		'checkout'    => [ 'checkout' ],
+		'checkout'    => [ 'districts', 'checkout' ],
 		'thank-you'   => [ 'thank-you' ],
 		'track-order' => [ 'track-order' ],
 	];
