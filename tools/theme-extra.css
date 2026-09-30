@@ -79,3 +79,18 @@
 .sh-rc-prev:hover{background-color:#800000}
 .sh-rc-next{width:36px;height:36px;border-radius:50%;background-color:#800000;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background-color .2s;padding:0}
 .sh-rc-next:hover{background-color:#5C0000}
+
+/* ── Shop ── */
+.sh-shop-search{border:1px solid #CCC;outline:none}
+.sh-shop-search:focus{border-color:#800000}
+
+/* ── Product page ── */
+.sh-tap{transition:opacity .15s,background-color .15s,transform .1s}
+.sh-tap:active{transform:scale(.97)}
+.sh-b-cart{background-color:#800000}.sh-b-cart:hover{background-color:#5C0000}
+.sh-b-cart.is-added,.sh-b-cart.is-added:hover{background-color:#34BE82}
+.sh-b-buy{background-color:#1a1a2e}.sh-b-buy:hover{background-color:#0d0d1f}
+.sh-b-wa{background-color:#25D366}.sh-b-wa:hover{background-color:#1db954}
+.sh-b-call{background-color:#1a3a6b}.sh-b-call:hover{background-color:#142d55}
+.sh-tag{font-size:12px;padding:4px 12px;background-color:#FFF0F0;color:#800000;border-radius:4px;text-decoration:none;font-family:'Open Sans',sans-serif;font-weight:500;border:1px solid #f5d0d0;transition:background-color .2s,color .2s}
+.sh-tag:hover{background-color:#800000;color:#fff}
