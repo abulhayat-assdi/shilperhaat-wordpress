@@ -52,13 +52,13 @@ class SH_Seo {
 				break;
 			case 'product':
 				$p                = SH_Router::data( 'product' );
-				$desc             = trim( wp_strip_all_tags( (string) ( $p['description'] ?? '' ) ) );
+				$desc             = trim( preg_replace( '/\s+/u', ' ', html_entity_decode( wp_strip_all_tags( (string) ( $p['description'] ?? '' ) ), ENT_QUOTES | ENT_HTML5, 'UTF-8' ) ) );
 				$desc             = '' !== $desc ? mb_substr( $desc, 0, 160 ) : $p['title'];
 				$m['title']       = $p['title'] . ' — Shilperhaat';
 				$m['description'] = $desc;
 				$m['path']        = '/product/' . rawurlencode( $p['slug'] );
 				$img              = ! empty( $p['images'][0]['imageUrl'] ) ? sh_absolute_url( $p['images'][0]['imageUrl'] ) : '';
-				$m['og']          = [ 'title' => $p['title'], 'description' => mb_substr( trim( wp_strip_all_tags( (string) ( $p['description'] ?? '' ) ) ), 0, 160 ), 'url' => self::site_url() . $m['path'], 'image' => $img, 'site_name' => false ];
+				$m['og']          = [ 'title' => $p['title'], 'description' => mb_substr( $desc, 0, 160 ), 'url' => self::site_url() . $m['path'], 'image' => $img, 'site_name' => false ];
 				break;
 			case 'cart':
 				$m['title']       = 'Cart — Shilperhaat';
