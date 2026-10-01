@@ -1,0 +1,16 @@
+{
+  "name": "shilperhaat-theme-build",
+  "private": true,
+  "description": "Dev-only: compiles Tailwind CSS for the theme and extracts icons/fonts. Output is committed, hosting needs no build tools.",
+  "scripts": {
+    "build:css": "tailwindcss -i ./input.css -o ../../wp-content/themes/shilperhaat/assets/css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "@fontsource/hind-siliguri": "^5.3.0",
+    "@fontsource/open-sans": "^5.3.0",
+    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/typography": "^0.5.20",
+    "lucide-static": "^1.49.0",
+    "tailwindcss": "^4.3.3"
+  }
+}

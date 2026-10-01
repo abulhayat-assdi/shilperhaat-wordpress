@@ -1,0 +1,53 @@
+/* Hover/focus states that the original React components applied through JS handlers.
+   Everything else comes from tailwind.css (built from the original globals.css). */
+
+[hidden] { display: none !important; }
+
+.sh-search:focus-within { border-color: #800000 !important; }
+
+.sh-icon-link { color: #333; }
+.sh-icon-link:hover { color: #800000; }
+
+.sh-nav-link { color: #FFFFFF; }
+.sh-nav-link:hover { color: #800000; }
+
+.sh-more-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 20px; color: #333; text-decoration: none;
+  font-size: 14px; font-family: 'Open Sans', sans-serif;
+  transition: background-color 0.15s;
+}
+.sh-more-item:hover { background-color: #FFF0F0; color: #800000; }
+
+.sh-mm-link { color: #333; }
+.sh-mm-link:hover { background-color: #fff8f0; color: #800000; }
+
+.sh-footer-heading {
+  font-size: 15px; font-weight: 700; color: #222; margin-bottom: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+.sh-footer-link {
+  font-size: 13px; color: #666; text-decoration: none;
+  font-family: 'Open Sans', sans-serif; display: block;
+  padding: 4px 0; line-height: 1.6; transition: color 0.2s;
+}
+.sh-footer-link:hover { color: #800000; }
+
+.sh-footer-contact {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; color: #666; text-decoration: none;
+}
+.sh-footer-contact:hover { color: #800000; }
+
+.sh-social {
+  width: 36px; height: 36px; border-radius: 50%; border: 1px solid #ddd;
+  display: flex; align-items: center; justify-content: center;
+  color: #666; text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+}
+.sh-social:hover { border-color: #800000; color: #800000; }
+
+.sh-home-btn:active { transform: scale(0.92); }
+
+/* Cart badges: shown by theme.js once the localStorage cart has items. */
+[data-sh-cart-count]:not([hidden]) { display: flex; }

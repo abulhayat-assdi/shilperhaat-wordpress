@@ -1,0 +1,11 @@
+/*
+Theme Name: Shilperhaat
+Description: Shilperhaat হ্যান্ডক্রাফট মার্কেটপ্লেস থিম। প্লাগিন "Shilperhaat CMS" প্রয়োজন। সব স্টাইল assets/css-এ প্রি-বিল্ট; হোস্টিংয়ে কোনো বিল্ড টুল লাগে না।
+Version: 0.1.0
+Requires at least: 6.4
+Requires PHP: 8.1
+Author: Shilperhaat
+License: GPL-2.0-or-later
+Text Domain: shilperhaat
+*/
+/* Styles are loaded from assets/css/ (see functions.php). */
