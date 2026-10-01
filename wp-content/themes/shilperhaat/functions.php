@@ -71,6 +71,12 @@ add_action( 'wp_enqueue_scripts', function () {
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'wp_head', 'wp_generator' );
+remove_action( 'wp_head', 'wp_robots', 1 ); // we print our own robots meta
+remove_action( 'wp_head', 'rsd_link' );
+remove_action( 'wp_head', 'wlwmanifest_link' );
+remove_action( 'wp_head', 'wp_shortlink_wp_head' );
+remove_action( 'wp_head', 'rest_output_link_wp_head' );
+remove_action( 'template_redirect', 'rest_output_link_header', 11 );
 remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
 add_filter( 'show_admin_bar', '__return_false' ); // keep the storefront pixel-identical for admins too
 

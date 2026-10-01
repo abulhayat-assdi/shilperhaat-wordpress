@@ -116,7 +116,11 @@ add_action( 'wp_ajax_sh_media_batch', function () {
 	$dest   = trailingslashit( $up['basedir'] ) . 'shilperhaat/';
 	$done   = 0;
 	$log    = array();
-	foreach ( array_slice( $list, $offset, 4 ) as $path ) {
+	$t0 = microtime( true );
+	foreach ( array_slice( $list, $offset, 25 ) as $path ) {
+		if ( $done > 0 && ( microtime( true ) - $t0 ) > 15 ) {
+			break; // stay well below typical max_execution_time; the browser asks for the next batch
+		}
 		++$done;
 		$rel = ltrim( substr( rawurldecode( $path ), strlen( '/uploads/' ) ), '/' );
 		if ( false !== strpos( $rel, '..' ) ) {
@@ -129,7 +133,7 @@ add_action( 'wp_ajax_sh_media_batch', function () {
 			continue;
 		}
 		wp_mkdir_p( dirname( $file ) );
-		$res = wp_remote_get( $base . $path, array( 'timeout' => 60, 'stream' => true, 'filename' => $file ) );
+		$res = wp_remote_get( $base . $path, array( 'timeout' => 25, 'stream' => true, 'filename' => $file ) );
 		if ( is_wp_error( $res ) || 200 !== (int) wp_remote_retrieve_response_code( $res ) ) {
 			if ( file_exists( $file ) ) {
 				wp_delete_file( $file );
