@@ -81,3 +81,6 @@ a:hover > .sh-cat-name { color: #800000 !important; }
 .blog-content li { margin-bottom: 0.35rem; color: #555; line-height: 1.7; }
 .blog-content a { color: #800000; text-decoration: underline; }
 .blog-content strong { font-weight: 700; color: #1a1208; }
+
+/* ── Shared spinner (Tailwind's animate-spin keyframes are only emitted when used) ── */
+@keyframes spin { to { transform: rotate(360deg); } }

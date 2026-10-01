@@ -31,6 +31,8 @@ add_action( 'wp_enqueue_scripts', function () {
 		'shop'  => home_url( '/shop' ),
 		'ajax'  => admin_url( 'admin-ajax.php' ),
 		'placeholder' => SH_THEME_URI . '/assets/img/placeholder-product.svg',
+		'iconPaths' => sh_icon_paths(),
+		'delivery' => function_exists( 'sh_delivery_config' ) ? sh_delivery_config() : array( 'deliveryCharge' => 80, 'freeDeliveryMin' => 2000 ),
 		'rest'  => esc_url_raw( rest_url( 'shilperhaat/v1/' ) ),
 		'contact' => array(
 			'whatsappUrl'    => sh_contact_settings()['whatsappUrl'],
@@ -47,7 +49,16 @@ add_action( 'wp_enqueue_scripts', function () {
 		),
 	) );
 	global $sh_route;
-	if ( isset( $sh_route['template'] ) && 'product' === $sh_route['template'] ) {
+	wp_enqueue_script( 'sh-cart', SH_THEME_URI . '/assets/js/cart.js', array( 'sh-theme' ), $ver, array( 'in_footer' => true, 'strategy' => 'defer' ) );
+	$tpl = isset( $sh_route['template'] ) ? $sh_route['template'] : '';
+	if ( 'checkout' === $tpl || 'thank-you' === $tpl ) {
+		wp_enqueue_script( 'sh-districts', SH_THEME_URI . '/assets/js/districts.js', array(), $ver, array( 'in_footer' => true, 'strategy' => 'defer' ) );
+		wp_enqueue_script( 'sh-checkout', SH_THEME_URI . '/assets/js/checkout.js', array( 'sh-cart', 'sh-districts' ), $ver, array( 'in_footer' => true, 'strategy' => 'defer' ) );
+	}
+	if ( 'track-order' === $tpl ) {
+		wp_enqueue_script( 'sh-track', SH_THEME_URI . '/assets/js/track.js', array( 'sh-cart' ), $ver, array( 'in_footer' => true, 'strategy' => 'defer' ) );
+	}
+	if ( 'product' === $tpl ) {
 		wp_enqueue_script( 'sh-product', SH_THEME_URI . '/assets/js/product.js', array( 'sh-theme' ), $ver, array( 'in_footer' => true, 'strategy' => 'defer' ) );
 	}
 	// The original site has no block-editor / emoji styling; keep the front end identical.
