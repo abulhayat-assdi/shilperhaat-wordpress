@@ -292,3 +292,69 @@
     revTimer = setInterval(function () { current = (current + 1) % groups; renderRev(); }, 4000);
   }
 })();
+
+/* ═════════ Shop filters (port of ShopFilters.tsx) ═════════ */
+(function () {
+  'use strict';
+  var $ = function (sel, root) { return (root || document).querySelector(sel); };
+  var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
+  var controls = $$('[data-sh-filter]');
+  if (!controls.length) return;
+
+  function update(key, value) {
+    var params = new URLSearchParams(window.location.search);
+    if (value) { params.set(key, value); } else { params.delete(key); }
+    params.delete('page');
+    var qs = params.toString();
+    window.location.href = window.location.pathname + (qs ? '?' + qs : '');
+  }
+  var timer;
+  controls.forEach(function (el) {
+    el.addEventListener('change', function () { update(el.getAttribute('data-sh-filter'), el.value); });
+    if (el.hasAttribute('data-sh-filter-debounce')) {
+      el.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(function () { update(el.getAttribute('data-sh-filter'), el.value); }, 700); });
+    }
+  });
+
+  var drawer = $('[data-sh-filter-drawer]'), backdrop = $('[data-sh-filter-backdrop]');
+  var setDrawer = function (open) {
+    if (!drawer) return;
+    drawer.hidden = !open; backdrop.hidden = !open;
+  };
+  $$('[data-sh-open-filters]').forEach(function (b) { b.addEventListener('click', function () { setDrawer(true); }); });
+  $$('[data-sh-close-filters]').forEach(function (b) { b.addEventListener('click', function () { setDrawer(false); }); });
+  if (backdrop) backdrop.addEventListener('click', function () { setDrawer(false); });
+})();
+
+/* ═════════ Blog category filter ═════════ */
+(function () {
+  'use strict';
+  var blog = document.querySelector('[data-sh-blog]');
+  if (!blog) return;
+  var grid = blog.querySelector('[data-sh-blog-grid]');
+  var empty = blog.querySelector('[data-sh-blog-empty]');
+  var allBtn = blog.querySelector('[data-sh-blog-all]');
+  var btns = Array.prototype.slice.call(blog.querySelectorAll('.sh-blog-cat'));
+  var cards = grid ? Array.prototype.slice.call(grid.children) : [];
+  var active = 'All';
+  var on = 'text-white shadow-md', off = 'bg-white text-gray-600 border border-gray-200 hover:border-[#800000] hover:text-[#800000]';
+  function apply(cat) {
+    active = cat;
+    btns.forEach(function (b) {
+      var is = b.getAttribute('data-cat') === cat;
+      b.className = 'sh-blog-cat px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ' + (is ? on : off);
+      b.style.backgroundColor = is ? '#800000' : '';
+    });
+    var shown = 0;
+    cards.forEach(function (c) {
+      var ok = cat === 'All' || c.getAttribute('data-cat') === cat;
+      c.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    if (grid) grid.hidden = shown === 0;
+    if (empty) empty.hidden = shown !== 0;
+    if (allBtn) allBtn.hidden = cat === 'All';
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { apply(b.getAttribute('data-cat')); }); });
+  if (allBtn) allBtn.addEventListener('click', function () { apply('All'); });
+})();

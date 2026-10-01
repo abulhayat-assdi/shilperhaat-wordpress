@@ -23,6 +23,7 @@ require_once SH_CMS_DIR . 'includes/settings.php';
 require_once SH_CMS_DIR . 'includes/helpers.php';
 require_once SH_CMS_DIR . 'includes/import.php';
 require_once SH_CMS_DIR . 'includes/data.php';
+require_once SH_CMS_DIR . 'includes/rest.php';
 
 register_activation_hook( __FILE__, 'sh_cms_activate' );
 

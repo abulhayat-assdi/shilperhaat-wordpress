@@ -10,6 +10,12 @@ $categories = sh_categories();
 $products   = sh_products();
 $reviews    = sh_reviews( array( 'visible' => true ) );
 
+$GLOBALS['sh_head'] = array(
+	'title'       => "Shilperhaat — Bangladesh's Finest Handcraft Textiles",
+	'description' => 'Explore a vast collection of hand-woven Katha, Chadar, Blankets & Nakshi Katha. Premium quality, affordable prices.',
+	'canonical'   => home_url( '/' ),
+);
+
 get_header();
 ?>
 <div style="background-color:#FAF0E6">

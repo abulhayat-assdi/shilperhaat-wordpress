@@ -33,3 +33,83 @@ function sh_cart_payload( $product ) {
 		'slug'           => $product->slug,
 	);
 }
+
+/** Renders the 404 template and stops (Next.js notFound()). */
+function sh_not_found() {
+	include SH_THEME_DIR . '/templates/404.php';
+	exit;
+}
+
+/** Plain-text excerpt for meta descriptions (description.slice(0,160) in the original). */
+function sh_meta_excerpt( $html, $len = 160 ) {
+	$t = trim( preg_replace( '/\s+/', ' ', wp_strip_all_tags( html_entity_decode( (string) $html ) ) ) );
+	return mb_substr( $t, 0, $len );
+}
+
+/**
+ * HTML allowed in admin-authored rich text (product descriptions, CMS pages, blog posts).
+ * The original rendered this HTML with DOMPurify; wp_kses with a permissive list is the equivalent.
+ */
+function sh_allowed_html() {
+	$attrs = array( 'class' => true, 'style' => true, 'id' => true, 'title' => true, 'dir' => true, 'lang' => true );
+	$tags  = array( 'p', 'br', 'div', 'span', 'strong', 'b', 'em', 'i', 'u', 's', 'strike', 'del', 'ins', 'sub', 'sup', 'small', 'mark',
+		'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'blockquote', 'pre', 'code', 'hr', 'table', 'thead', 'tbody', 'tfoot', 'tr', 'th', 'td', 'figure', 'figcaption' );
+	$out   = array();
+	foreach ( $tags as $t ) {
+		$out[ $t ] = $attrs;
+	}
+	$out['font']   = $attrs + array( 'color' => true, 'size' => true, 'face' => true );
+	$out['a']      = $attrs + array( 'href' => true, 'target' => true, 'rel' => true );
+	$out['img']    = $attrs + array( 'src' => true, 'alt' => true, 'width' => true, 'height' => true, 'loading' => true );
+	$out['iframe'] = $attrs + array( 'src' => true, 'width' => true, 'height' => true, 'allow' => true, 'allowfullscreen' => true, 'frameborder' => true );
+	return $out;
+}
+
+/** Product + breadcrumb JSON-LD (same shape as the original product page). */
+function sh_product_jsonld( $product, $reviews ) {
+	$url    = home_url( '/product/' . $product->slug );
+	$images = array();
+	foreach ( $product->images as $i ) {
+		$images[] = sh_image_url( $i->image_url );
+	}
+	$count = count( $reviews );
+	$prod  = array(
+		'@context' => 'https://schema.org',
+		'@type'    => 'Product',
+		'name'     => $product->title,
+		'brand'    => array( '@type' => 'Brand', 'name' => 'Shilperhaat' ),
+		'offers'   => array(
+			'@type'         => 'Offer',
+			'url'           => $url,
+			'priceCurrency' => 'BDT',
+			'price'         => number_format( (float) $product->price, 2, '.', '' ),
+			'availability'  => $product->stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+		),
+	);
+	if ( $product->description ) {
+		$prod['description'] = $product->description;
+	}
+	if ( $images ) {
+		$prod['image'] = $images;
+	}
+	if ( $product->sku ) {
+		$prod['sku'] = $product->sku;
+	}
+	if ( $product->category ) {
+		$prod['category'] = $product->category->name;
+	}
+	if ( $count ) {
+		$avg                     = array_sum( wp_list_pluck( $reviews, 'rating' ) ) / $count;
+		$prod['aggregateRating'] = array( '@type' => 'AggregateRating', 'ratingValue' => number_format( $avg, 1, '.', '' ), 'reviewCount' => $count );
+	}
+	$items   = array(
+		array( '@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => home_url( '/' ) ),
+		array( '@type' => 'ListItem', 'position' => 2, 'name' => 'Products', 'item' => home_url( '/shop' ) ),
+	);
+	$pos = 3;
+	if ( $product->category ) {
+		$items[] = array( '@type' => 'ListItem', 'position' => $pos++, 'name' => $product->category->name, 'item' => home_url( '/shop?category=' . $product->category->slug ) );
+	}
+	$items[] = array( '@type' => 'ListItem', 'position' => $pos, 'name' => $product->title, 'item' => $url );
+	return array( $prod, array( '@context' => 'https://schema.org', '@type' => 'BreadcrumbList', 'itemListElement' => $items ) );
+}

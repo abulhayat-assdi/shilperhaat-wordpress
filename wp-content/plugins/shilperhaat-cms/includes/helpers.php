@@ -82,3 +82,8 @@ function sh_phone_url( $raw = '' ) {
 	}
 	return 'tel:' . preg_replace( '/[\s\-\(\)]/', '', $raw );
 }
+
+/** 25-char lowercase id, same style as the original cuid() primary keys. */
+function sh_new_id() {
+	return 'c' . substr( strtolower( bin2hex( random_bytes( 13 ) ) ), 0, 24 );
+}

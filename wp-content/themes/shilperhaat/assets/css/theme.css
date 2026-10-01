@@ -65,3 +65,19 @@
 a:hover > .sh-cat-name { color: #800000 !important; }
 .sh-rev-prev:hover { background-color: #800000 !important; }
 .sh-rev-next:hover { background-color: #5C0000 !important; }
+
+/* ── Shop ── */
+.sh-shop-search:focus { border-color: #800000 !important; }
+
+/* ── Product page ── */
+.sh-tag:hover { background-color: #800000 !important; color: #fff !important; }
+
+/* ── Blog post body (inline <style> of the original blog/[slug] page) ── */
+.blog-content h2 { font-size: 1.35rem; font-weight: 700; color: #1a1208; margin: 1.5rem 0 0.6rem; line-height: 1.35; }
+.blog-content h3 { font-size: 1.1rem; font-weight: 600; color: #333; margin: 1.2rem 0 0.5rem; line-height: 1.4; }
+.blog-content p { margin: 0 0 1rem; color: #555; line-height: 1.8; }
+.blog-content ul { list-style-type: disc; padding-left: 1.5rem; margin: 0.75rem 0 1rem; }
+.blog-content ol { list-style-type: decimal; padding-left: 1.5rem; margin: 0.75rem 0 1rem; }
+.blog-content li { margin-bottom: 0.35rem; color: #555; line-height: 1.7; }
+.blog-content a { color: #800000; text-decoration: underline; }
+.blog-content strong { font-weight: 700; color: #1a1208; }

@@ -107,3 +107,94 @@ function sh_get_product_by_slug( $slug ) {
 	$rows = sh_attach_product_relations( array( $row ) );
 	return $rows[0];
 }
+
+/**
+ * Shop listing query (port of the Prisma query in app/(public)/shop/page.tsx).
+ *
+ * @return array{products:object[],total:int}
+ */
+function sh_query_products( $a ) {
+	global $wpdb;
+	$a = wp_parse_args( $a, array( 'category' => '', 'min' => '', 'max' => '', 'search' => '', 'sort' => 'newest', 'page' => 1, 'limit' => 12 ) );
+	$p = sh_table( 'products' );
+	$c = sh_table( 'categories' );
+
+	$where = array( "p.status = 'ACTIVE'" );
+	if ( '' !== $a['category'] ) {
+		$where[] = $wpdb->prepare( 'c.slug = %s', $a['category'] );
+	}
+	if ( '' !== $a['min'] && is_numeric( $a['min'] ) ) {
+		$where[] = $wpdb->prepare( 'p.price >= %f', (float) $a['min'] );
+	}
+	if ( '' !== $a['max'] && is_numeric( $a['max'] ) ) {
+		$where[] = $wpdb->prepare( 'p.price <= %f', (float) $a['max'] );
+	}
+	if ( '' !== $a['search'] ) {
+		$like    = '%' . $wpdb->esc_like( $a['search'] ) . '%';
+		$where[] = $wpdb->prepare( '(p.title LIKE %s OR p.description LIKE %s)', $like, $like );
+	}
+	$order = array(
+		'price_asc'    => 'p.price ASC',
+		'price_desc'   => 'p.price DESC',
+		'best_selling' => 'p.is_best_selling DESC, p.created_at DESC',
+	);
+	$order_by = isset( $order[ $a['sort'] ] ) ? $order[ $a['sort'] ] : 'p.created_at DESC';
+	$page     = max( 1, (int) $a['page'] );
+	$limit    = max( 1, (int) $a['limit'] );
+	$w        = implode( ' AND ', $where );
+
+	$total = (int) $wpdb->get_var( "SELECT COUNT(*) FROM $p p LEFT JOIN $c c ON c.id = p.category_id WHERE $w" ); // phpcs:ignore WordPress.DB
+	$rows  = (array) $wpdb->get_results( "SELECT p.*, c.name AS category_name, c.slug AS category_slug FROM $p p LEFT JOIN $c c ON c.id = p.category_id WHERE $w ORDER BY $order_by LIMIT " . ( ( $page - 1 ) * $limit ) . ", $limit" ); // phpcs:ignore WordPress.DB
+	return array( 'products' => sh_attach_product_relations( $rows ), 'total' => $total );
+}
+
+function sh_related_products( $product, $limit = 4 ) {
+	global $wpdb;
+	if ( ! $product->category_id ) {
+		return array();
+	}
+	$p    = sh_table( 'products' );
+	$c    = sh_table( 'categories' );
+	$rows = (array) $wpdb->get_results( $wpdb->prepare( "SELECT p.*, c.name AS category_name, c.slug AS category_slug FROM $p p LEFT JOIN $c c ON c.id = p.category_id WHERE p.category_id = %s AND p.id <> %s AND p.status = 'ACTIVE' ORDER BY p.created_at DESC LIMIT %d", $product->category_id, $product->id, $limit ) ); // phpcs:ignore WordPress.DB
+	return sh_attach_product_relations( $rows );
+}
+
+/* ───────── CMS pages ───────── */
+
+/** Published page (sections decoded) or null. */
+function sh_get_page( $slug ) {
+	global $wpdb;
+	$row = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM ' . sh_table( 'pages' ) . ' WHERE slug = %s AND is_published = 1', $slug ) ); // phpcs:ignore WordPress.DB
+	if ( ! $row ) {
+		return null;
+	}
+	$sections       = json_decode( (string) $row->sections, true );
+	$row->sections  = is_array( $sections ) ? $sections : array();
+	return $row;
+}
+
+function sh_page_exists( $slug ) {
+	global $wpdb;
+	return (bool) $wpdb->get_var( $wpdb->prepare( 'SELECT id FROM ' . sh_table( 'pages' ) . ' WHERE slug = %s AND is_published = 1', $slug ) ); // phpcs:ignore WordPress.DB
+}
+
+/* ───────── Blog ───────── */
+
+function sh_blog_posts( $published_only = true ) {
+	global $wpdb;
+	$where = $published_only ? 'WHERE is_published = 1' : '';
+	$rows  = (array) $wpdb->get_results( 'SELECT * FROM ' . sh_table( 'blog_posts' ) . " $where ORDER BY published_at DESC" ); // phpcs:ignore WordPress.DB
+	foreach ( $rows as $r ) {
+		$r->tags = $r->tags ? json_decode( $r->tags, true ) : array();
+	}
+	return $rows;
+}
+
+function sh_get_blog_post( $slug ) {
+	global $wpdb;
+	$r = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM ' . sh_table( 'blog_posts' ) . ' WHERE slug = %s AND is_published = 1', $slug ) ); // phpcs:ignore WordPress.DB
+	if ( $r ) {
+		$r->tags = $r->tags ? json_decode( $r->tags, true ) : array();
+	}
+	return $r;
+}

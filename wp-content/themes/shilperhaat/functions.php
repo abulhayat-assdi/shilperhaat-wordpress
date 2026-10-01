@@ -31,6 +31,13 @@ add_action( 'wp_enqueue_scripts', function () {
 		'shop'  => home_url( '/shop' ),
 		'ajax'  => admin_url( 'admin-ajax.php' ),
 		'placeholder' => SH_THEME_URI . '/assets/img/placeholder-product.svg',
+		'rest'  => esc_url_raw( rest_url( 'shilperhaat/v1/' ) ),
+		'contact' => array(
+			'whatsappUrl'    => sh_contact_settings()['whatsappUrl'],
+			'phoneNumber'    => sh_contact_settings()['phoneNumber'],
+			'layoutWhatsapp' => sh_layout()['whatsappNumber'],
+			'layoutPhone'    => sh_layout()['phone'],
+		),
 		'icons' => array(
 			'success' => sh_icon( 'check-circle', 18, '', 2, 'text-green-600' ),
 			'error'   => sh_icon( 'x-circle', 18, '', 2, 'text-red-600' ),
@@ -39,6 +46,10 @@ add_action( 'wp_enqueue_scripts', function () {
 			'close'   => sh_icon( 'x', 14 ),
 		),
 	) );
+	global $sh_route;
+	if ( isset( $sh_route['template'] ) && 'product' === $sh_route['template'] ) {
+		wp_enqueue_script( 'sh-product', SH_THEME_URI . '/assets/js/product.js', array( 'sh-theme' ), $ver, array( 'in_footer' => true, 'strategy' => 'defer' ) );
+	}
 	// The original site has no block-editor / emoji styling; keep the front end identical.
 	wp_dequeue_style( 'wp-block-library' );
 	wp_dequeue_style( 'wp-block-library-theme' );
@@ -75,3 +86,71 @@ add_action( 'wp_head', function () {
 	echo '<link rel="icon" href="' . esc_url( $img . 'icon-512.png' ) . '" type="image/png" sizes="512x512">' . "\n";
 	echo '<link rel="apple-touch-icon" href="' . esc_url( $img . 'apple-touch-icon.png' ) . '">' . "\n";
 }, 2 );
+
+/**
+ * <title>, meta description, canonical, Open Graph and JSON-LD.
+ * Templates set $GLOBALS['sh_head'] = array( title, description, canonical, og_title, og_image, jsonld, noindex ).
+ * Titles follow the original Next.js metadata template "%s | {siteName}".
+ */
+function sh_head_data() {
+	$site = function_exists( 'sh_layout' ) ? sh_layout()['siteName'] : 'Shilperhaat';
+	$h    = isset( $GLOBALS['sh_head'] ) ? $GLOBALS['sh_head'] : array();
+	return array_merge( array(
+		'title'       => '',
+		'description' => "Shop Bangladesh's best handcraft textiles — Katha, Chadar, Blankets, Nakshi Katha and much more at Shilperhaat.",
+		'canonical'   => home_url( '/' ),
+		'og_title'    => '',
+		'og_image'    => '',
+		'jsonld'      => array(),
+		'site'        => $site,
+	), $h );
+}
+
+add_filter( 'pre_get_document_title', function ( $title ) {
+	if ( ! function_exists( 'sh_layout' ) ) {
+		return $title;
+	}
+	$h = sh_head_data();
+	if ( '' === $h['title'] ) {
+		return $h['site'] . " — Bangladesh's Finest Handcraft Textiles";
+	}
+	return $h['title'] . ' | ' . $h['site'];
+}, 5 );
+
+add_action( 'wp_head', function () {
+	if ( ! function_exists( 'sh_layout' ) ) {
+		return;
+	}
+	$h = sh_head_data();
+	echo '<meta name="description" content="' . esc_attr( $h['description'] ) . '">' . "\n";
+	echo '<meta name="keywords" content="katha,nakshi katha,chadar,blanket,handcraft,bangladesh,shilperhaat,textile">' . "\n";
+	echo '<link rel="canonical" href="' . esc_url( $h['canonical'] ) . '">' . "\n";
+	echo '<meta name="robots" content="index, follow">' . "\n";
+	echo '<meta property="og:type" content="website">' . "\n";
+	echo '<meta property="og:site_name" content="' . esc_attr( $h['site'] ) . '">' . "\n";
+	echo '<meta property="og:locale" content="en_US">' . "\n";
+	if ( $h['og_title'] ) {
+		echo '<meta property="og:title" content="' . esc_attr( $h['og_title'] ) . '">' . "\n";
+		echo '<meta property="og:description" content="' . esc_attr( $h['description'] ) . '">' . "\n";
+		echo '<meta property="og:url" content="' . esc_url( $h['canonical'] ) . '">' . "\n";
+	}
+	$og_image = $h['og_image'] ? $h['og_image'] : sh_media_url( sh_layout()['logoUrl'] );
+	if ( $og_image ) {
+		echo '<meta property="og:image" content="' . esc_url( $og_image ) . '">' . "\n";
+	}
+
+	$layout = sh_layout();
+	$same   = array_values( array_filter( array( $layout['facebookUrl'], $layout['twitterUrl'], $layout['instagramUrl'] ) ) );
+	$org    = array( '@context' => 'https://schema.org', '@type' => 'Organization', 'name' => $layout['siteName'], 'url' => home_url( '/' ) );
+	if ( $layout['logoUrl'] ) {
+		$org['logo'] = sh_media_url( $layout['logoUrl'] );
+	}
+	if ( $same ) {
+		$org['sameAs'] = $same;
+	}
+	$site = array( '@context' => 'https://schema.org', '@type' => 'WebSite', 'name' => $layout['siteName'], 'url' => home_url( '/' ),
+		'potentialAction' => array( '@type' => 'SearchAction', 'target' => array( '@type' => 'EntryPoint', 'urlTemplate' => home_url( '/shop?search={search_term_string}' ) ), 'query-input' => 'required name=search_term_string' ) );
+	foreach ( array_merge( array( $org, $site ), $h['jsonld'] ) as $block ) {
+		echo '<script type="application/ld+json">' . wp_json_encode( $block, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>' . "\n";
+	}
+}, 3 );
