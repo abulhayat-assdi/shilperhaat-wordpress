@@ -91,6 +91,11 @@ function sh_url( $path ) {
 
 /** Favicons: same set as the original (favicon.ico + 192/512 PNG + apple-touch-icon). */
 add_action( 'wp_head', function () {
+	$custom = function_exists( 'sh_site_settings' ) && ! empty( sh_site_settings()['faviconUrl'] ) ? sh_media_url( sh_site_settings()['faviconUrl'] ) : '';
+	if ( $custom ) {
+		echo '<link rel="icon" href="' . esc_url( $custom ) . '">' . "\n" . '<link rel="apple-touch-icon" href="' . esc_url( $custom ) . '">' . "\n";
+		return;
+	}
 	$img = SH_THEME_URI . '/assets/img/';
 	echo '<link rel="icon" href="' . esc_url( $img . 'favicon.ico' ) . '" sizes="48x48">' . "\n";
 	echo '<link rel="icon" href="' . esc_url( $img . 'icon-192.png' ) . '" type="image/png" sizes="192x192">' . "\n";
