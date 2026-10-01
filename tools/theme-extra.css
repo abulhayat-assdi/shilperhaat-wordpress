@@ -1,0 +1,101 @@
+/* Hover/focus/active states that were inline-style JS handlers in the React components.
+   Base (non-hover) values are kept in these classes instead of inline styles so :hover can override them. */
+
+/* ── Header ── */
+.sh-more-item{display:flex;align-items:center;gap:10px;padding:12px 20px;color:#333;text-decoration:none;font-size:14px;font-family:'Open Sans',sans-serif;transition:background-color .15s}
+.sh-more-item:hover{background-color:#FFF0F0;color:#800000}
+.sh-hicon{display:flex;flex-direction:column;align-items:center;gap:3px;color:#333;text-decoration:none;flex-shrink:0;background:none;border:none;cursor:pointer;padding:0}
+.sh-hicon:hover,.sh-hicon.is-open{color:#800000}
+.sh-hicon .lbl{font-size:11px;color:inherit;white-space:nowrap;font-family:'Open Sans',sans-serif}
+.sh-hsearch{display:flex;align-items:center;border:1px solid #ddd;border-radius:4px;height:44px;overflow:hidden;background-color:#fff;transition:border-color .2s}
+.sh-hsearch:focus-within{border-color:#800000}
+.sh-nav-link{display:flex;align-items:center;gap:4px;height:100%;padding:0 16px;color:#fff;font-size:14px;font-weight:500;font-family:'Open Sans',sans-serif;text-decoration:none;white-space:nowrap;transition:color .15s}
+.sh-nav-link:hover{color:#800000}
+#sh-nav.is-sticky{position:fixed!important;top:0;left:0;z-index:1000!important;box-shadow:0 2px 12px rgba(0,0,0,0.25);animation:slideDown .3s ease}
+.sh-cart-badge{background-color:#800000;color:#fff;font-weight:700;border-radius:50%;align-items:center;justify-content:center}
+.sh-cart-badge:not([hidden]){display:flex}
+.sh-badge-d{position:absolute;top:-6px;right:-8px;font-size:10px;width:17px;height:17px}
+.sh-badge-m{position:absolute;top:0;right:0;font-size:9px;width:15px;height:15px}
+
+/* ── Footer ── */
+.sh-flink{font-size:13px;color:#666;text-decoration:none;font-family:'Open Sans',sans-serif;display:block;padding:4px 0;line-height:1.6;transition:color .2s}
+.sh-flink:hover{color:#800000}
+.sh-fhead{font-size:15px;font-weight:700;color:#222;margin-bottom:16px;font-family:'Open Sans',sans-serif}
+.sh-fcontact{display:flex;align-items:center;gap:8px;font-size:13px;color:#666;text-decoration:none}
+.sh-fcontact:hover{color:#800000}
+.sh-fsocial{width:36px;height:36px;border-radius:50%;border:1px solid #ddd;display:flex;align-items:center;justify-content:center;color:#666;text-decoration:none;transition:border-color .2s,color .2s,background-color .2s}
+.sh-fsocial:hover{border-color:#800000;color:#800000}
+
+/* ── Mobile menu / bottom nav ── */
+.sh-mm-link{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;color:#333;text-decoration:none;border-bottom:1px solid #eee;font-size:15px;font-weight:500;transition:background-color .15s,color .15s}
+.sh-mm-link:hover{background-color:#fff8f0;color:#800000}
+.sh-bn-home{transition:transform .1s ease,background-color .2s}
+.sh-bn-home:active{transform:scale(.92)}
+
+/* ── Floating contact ── */
+#sh-fc[data-open="1"] .sh-fc-pop{display:block!important}
+#sh-fc[data-open="1"] .sh-fc-pulse{display:none}
+#sh-fc[data-open="1"] .sh-fc-blob{border-radius:50%!important}
+#sh-fc[data-open="1"] .sh-fc-ico-x{display:inline-flex!important}
+#sh-fc[data-open="1"] .sh-fc-ico-chat{display:none}
+
+/* ── Product cards ── */
+.sh-pc{box-shadow:0 1px 4px rgba(0,0,0,0.05);transition:box-shadow .25s ease,transform .2s ease}
+.sh-pc:hover{box-shadow:0 4px 20px rgba(0,0,0,0.1);transform:translateY(-2px)}
+.sh-pbadge{color:#fff;font-size:10px;font-weight:700;padding:3px 7px;border-radius:4px;display:inline-block}
+.sh-btn-cart{padding:8px 12px;background-color:#fff;color:#800000;border:2px solid #800000;border-radius:4px;font-size:12px;font-weight:600;cursor:pointer;transition:background-color .2s,color .2s,transform .1s}
+.sh-btn-cart:hover:not(:disabled){background-color:#800000;color:#fff}
+.sh-btn-cart:active:not(:disabled){transform:scale(.97)}
+.sh-btn-cart:disabled{color:#aaa;border-color:#ddd;cursor:not-allowed}
+/* top-selling feature card */
+.sh-tsc{background-color:#fff;border-radius:8px;border:1px solid #eee;display:flex;align-items:center;gap:20px;padding:16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,0.05);transition:box-shadow .25s ease,transform .2s ease}
+.sh-tsc:hover{box-shadow:0 4px 20px rgba(0,0,0,0.1);transform:translateY(-2px)}
+.sh-tsc-btn{flex:1;padding:8px;border-radius:4px;font-size:12px;font-weight:600;white-space:nowrap}
+.sh-tsc-cart{background-color:#fff;color:#800000;border:2px solid #800000;cursor:pointer;transition:background-color .2s,color .2s,transform .1s}
+.sh-tsc-cart:hover:not(:disabled){background-color:#800000;color:#fff}
+.sh-tsc-cart:active:not(:disabled){transform:scale(.96)}
+.sh-tsc-cart:disabled{color:#aaa;border-color:#ddd;cursor:not-allowed}
+.sh-tsc-buy{background-color:#800000;color:#fff;border:none;cursor:pointer;transition:background-color .2s,transform .1s}
+.sh-tsc-buy:hover:not(:disabled){background-color:#5C0000}
+.sh-tsc-buy:active:not(:disabled){transform:scale(.96)}
+.sh-tsc-buy:disabled{background-color:#F5F5F5;color:#aaa;cursor:not-allowed}
+
+/* ── Home: hero, category cards, reviews ── */
+.sh-hero-arrow{background-color:rgba(255,255,255,0.22);color:#fff;transition:background-color .2s}
+.sh-hero-arrow:hover{background-color:rgba(255,255,255,0.55)}
+.sh-cat-card{flex-shrink:0;width:100px;min-width:100px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:inherit}
+.sh-cat-circle{width:80px;height:80px;border-radius:50%;background-color:#FFF0F0;border:2px solid #f5d0d0;overflow:hidden;position:relative;flex-shrink:0;transition:box-shadow .2s,transform .2s}
+.sh-cat-card:hover .sh-cat-circle{box-shadow:0 4px 16px rgba(128,0,0,0.25);transform:translateY(-3px)}
+.sh-cat-name{font-size:13px;font-weight:500;color:#333;text-align:center;line-height:1.3;font-family:'Open Sans', sans-serif;transition:color .2s}
+.sh-cat-card:hover .sh-cat-name{color:#800000}
+.sh-cat-scroll{scrollbar-width:none;-ms-overflow-style:none}
+.sh-cat-scroll::-webkit-scrollbar{display:none}
+.sh-viewall-btn{border:2px solid #800000;color:#800000;transition:background-color .15s,color .15s}
+.sh-viewall-btn:hover{background-color:#800000;color:#fff}
+.sh-rc-item{flex-shrink:0;width:100%;padding:4px 8px}
+@media (min-width:640px){.sh-rc-item{width:50%}}
+@media (min-width:1024px){.sh-rc-item{width:33.33333333%}}
+.sh-rc-prev{width:36px;height:36px;border-radius:50%;background-color:#F5F5F5;border:1px solid #E8E8E8;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background-color .2s;padding:0}
+.sh-rc-prev:hover{background-color:#800000}
+.sh-rc-next{width:36px;height:36px;border-radius:50%;background-color:#800000;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background-color .2s;padding:0}
+.sh-rc-next:hover{background-color:#5C0000}
+
+/* ── Shop ── */
+.sh-shop-search{border:1px solid #CCC;outline:none}
+.sh-shop-search:focus{border-color:#800000}
+
+/* ── Product page ── */
+.sh-tap{transition:opacity .15s,background-color .15s,transform .1s}
+.sh-tap:active{transform:scale(.97)}
+.sh-b-cart{background-color:#800000}.sh-b-cart:hover{background-color:#5C0000}
+.sh-b-cart.is-added,.sh-b-cart.is-added:hover{background-color:#34BE82}
+.sh-b-buy{background-color:#1a1a2e}.sh-b-buy:hover{background-color:#0d0d1f}
+.sh-b-wa{background-color:#25D366}.sh-b-wa:hover{background-color:#1db954}
+.sh-b-call{background-color:#1a3a6b}.sh-b-call:hover{background-color:#142d55}
+.sh-tag{font-size:12px;padding:4px 12px;background-color:#FFF0F0;color:#800000;border-radius:4px;text-decoration:none;font-family:'Open Sans',sans-serif;font-weight:500;border:1px solid #f5d0d0;transition:background-color .2s,color .2s}
+.sh-tag:hover{background-color:#800000;color:#fff}
+
+/* ── Checkout ── */
+.sh-ss-opt:hover{background:#fff8f0!important}
+.sh-co-link:hover{text-decoration:underline!important}
+[data-err]:empty{display:none}
