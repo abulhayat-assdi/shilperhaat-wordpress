@@ -12,6 +12,7 @@ define( 'SH_THEME_URI', get_template_directory_uri() );
 
 require_once SH_THEME_DIR . '/inc/icons.php';
 require_once SH_THEME_DIR . '/inc/router.php';
+require_once SH_THEME_DIR . '/inc/components.php';
 
 add_action( 'after_setup_theme', function () {
 	add_theme_support( 'title-tag' );
@@ -29,6 +30,14 @@ add_action( 'wp_enqueue_scripts', function () {
 		'home'  => home_url( '/' ),
 		'shop'  => home_url( '/shop' ),
 		'ajax'  => admin_url( 'admin-ajax.php' ),
+		'placeholder' => SH_THEME_URI . '/assets/img/placeholder-product.svg',
+		'icons' => array(
+			'success' => sh_icon( 'check-circle', 18, '', 2, 'text-green-600' ),
+			'error'   => sh_icon( 'x-circle', 18, '', 2, 'text-red-600' ),
+			'warning' => sh_icon( 'alert-circle', 18, '', 2, 'text-yellow-600' ),
+			'info'    => sh_icon( 'info', 18, '', 2, 'text-blue-600' ),
+			'close'   => sh_icon( 'x', 14 ),
+		),
 	) );
 	// The original site has no block-editor / emoji styling; keep the front end identical.
 	wp_dequeue_style( 'wp-block-library' );

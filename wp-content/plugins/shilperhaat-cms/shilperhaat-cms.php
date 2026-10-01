@@ -21,6 +21,8 @@ define( 'SH_CMS_URL', plugin_dir_url( __FILE__ ) );
 require_once SH_CMS_DIR . 'includes/schema.php';
 require_once SH_CMS_DIR . 'includes/settings.php';
 require_once SH_CMS_DIR . 'includes/helpers.php';
+require_once SH_CMS_DIR . 'includes/import.php';
+require_once SH_CMS_DIR . 'includes/data.php';
 
 register_activation_hook( __FILE__, 'sh_cms_activate' );
 
