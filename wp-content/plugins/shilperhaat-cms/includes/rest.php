@@ -17,6 +17,9 @@ add_action( 'rest_api_init', function () {
 		'permission_callback' => '__return_true',
 		'callback'            => function ( WP_REST_Request $req ) {
 			global $wpdb;
+			if ( ! sh_rate_limit( 'review', 10 ) ) {
+				return sh_rest_error( 'Too many reviews submitted. Please try again later.', 429 );
+			}
 			$body       = $req->get_json_params();
 			$product_id = isset( $body['productId'] ) ? trim( (string) $body['productId'] ) : '';
 			$name       = isset( $body['name'] ) ? trim( (string) $body['name'] ) : '';

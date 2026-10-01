@@ -87,3 +87,18 @@ function sh_phone_url( $raw = '' ) {
 function sh_new_id() {
 	return 'c' . substr( strtolower( bin2hex( random_bytes( 13 ) ) ), 0, 24 );
 }
+
+/**
+ * Simple per-IP rate limit (transient based). Returns true when the request is allowed.
+ * Protects the public order / review / tracking endpoints from spam and enumeration.
+ */
+function sh_rate_limit( $bucket, $max, $window = HOUR_IN_SECONDS ) {
+	$ip  = function_exists( 'sh_client_ip' ) ? sh_client_ip() : ( isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '' );
+	$key = 'sh_rl_' . md5( $bucket . '|' . $ip );
+	$n   = (int) get_transient( $key );
+	if ( $n >= $max ) {
+		return false;
+	}
+	set_transient( $key, $n + 1, $window );
+	return true;
+}

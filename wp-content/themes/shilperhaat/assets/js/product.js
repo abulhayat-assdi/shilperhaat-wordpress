@@ -69,10 +69,9 @@
 
     var arrows = function () {
       if (items.length < 2) return '';
-      var m = 'position:absolute;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;border-radius:50%;cursor:pointer;z-index:10;';
-      return '<button type="button" data-sh-gal-prev aria-label="Previous" class="md:hidden" style="' + m + 'left:8px;background-color:rgba(0,0,0,0.12);border:none;width:32px;height:32px;color:#FFFFFF">' + ICON.prev16 + '</button>' +
-        '<button type="button" data-sh-gal-next aria-label="Next" class="md:hidden" style="' + m + 'right:8px;background-color:rgba(0,0,0,0.12);border:none;width:32px;height:32px;color:#FFFFFF">' + ICON.next16 + '</button>' +
-        '<button type="button" data-sh-gal-next aria-label="Next image" class="hidden md:flex" style="' + m + 'right:8px;background-color:rgba(255,255,255,0.92);border:1px solid #eee;width:28px;height:28px;color:#666;box-shadow:0 1px 4px rgba(0,0,0,0.08)">' + ICON.next14 + '</button>';
+      return '<button type="button" data-sh-gal-prev aria-label="Previous" class="absolute left-2 top-1/2 -translate-y-1/2 md:hidden flex items-center justify-center" style="background-color:rgba(0,0,0,0.12);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;color:#FFFFFF;z-index:10">' + ICON.prev16 + '</button>' +
+        '<button type="button" data-sh-gal-next aria-label="Next" class="absolute right-2 top-1/2 -translate-y-1/2 md:hidden flex items-center justify-center" style="background-color:rgba(0,0,0,0.12);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;color:#FFFFFF;z-index:10">' + ICON.next16 + '</button>' +
+        '<button type="button" data-sh-gal-next aria-label="Next image" class="absolute right-2 top-1/2 -translate-y-1/2 hidden md:flex items-center justify-center" style="background-color:rgba(255,255,255,0.92);border:1px solid #eee;width:28px;height:28px;border-radius:50%;cursor:pointer;color:#666;z-index:10;box-shadow:0 1px 4px rgba(0,0,0,0.08)">' + ICON.next14 + '</button>';
     };
 
     var renderMain = function () {

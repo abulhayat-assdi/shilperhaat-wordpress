@@ -64,4 +64,21 @@
       out.text(r && r.data ? r.data : (r.success ? 'OK' : 'Failed')).css('color', r.success ? '#2e7d32' : '#b71c1c');
     }).fail(function () { out.text('Request failed').css('color', '#b71c1c'); }).always(function () { btn.prop('disabled', false); });
   });
+
+  /* ── Download media from the live site (batched) ── */
+  $(document).on('click', '#sh-media-start', function () {
+    var btn = $(this), box = $('#sh-media-progress'), log = $('#sh-media-log'), bar = $('#sh-media-bar'), txt = $('#sh-media-text');
+    btn.prop('disabled', true); box.show(); log.text('');
+    function step(offset) {
+      $.post(window.ajaxurl, { action: 'sh_media_batch', _wpnonce: btn.data('nonce'), base: $('#sh-media-base').val(), offset: offset }, function (r) {
+        if (!r || !r.success) { txt.text('Failed: ' + (r && r.data ? r.data : 'error')).css('color', '#b71c1c'); btn.prop('disabled', false); return; }
+        var d = r.data;
+        bar.attr('max', Math.max(d.total, 1)).val(Math.min(d.next, d.total));
+        txt.text(Math.min(d.next, d.total) + ' / ' + d.total);
+        log.append(document.createTextNode(d.log.join('\n') + '\n')); log.scrollTop(log[0].scrollHeight);
+        if (d.done) { txt.text('Done — ' + d.total + ' files checked'); btn.prop('disabled', false); } else { step(d.next); }
+      }).fail(function () { txt.text('Request failed — click again to resume.').css('color', '#b71c1c'); btn.prop('disabled', false); });
+    }
+    step(0);
+  });
 })(jQuery);

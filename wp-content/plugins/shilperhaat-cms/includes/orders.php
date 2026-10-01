@@ -76,6 +76,9 @@ add_action( 'rest_api_init', function () {
 		'permission_callback' => '__return_true',
 		'callback'            => function ( WP_REST_Request $req ) {
 			global $wpdb;
+			if ( ! sh_rate_limit( 'track', 40 ) ) {
+				return new WP_REST_Response( array( 'success' => false, 'error' => 'Too many lookups. Please try again later.' ), 429 );
+			}
 			$num = strtoupper( trim( (string) $req->get_param( 'orderNumber' ) ) );
 			if ( '' === $num ) {
 				return new WP_REST_Response( array( 'success' => false, 'error' => 'Order number is required' ), 400 );
@@ -144,6 +147,9 @@ function sh_order_error( $msg, $status = 400 ) {
 /** Port of POST /api/orders: prices & totals are recomputed server-side, stock is reserved atomically. */
 function sh_rest_create_order( WP_REST_Request $req ) {
 	global $wpdb;
+	if ( ! sh_rate_limit( 'order', 20 ) ) {
+		return sh_order_error( 'Too many orders from this connection. Please try again later.', 429 );
+	}
 	$b     = $req->get_json_params();
 	$raw   = isset( $b['items'] ) && is_array( $b['items'] ) ? $b['items'] : array();
 	if ( ! $raw ) {
