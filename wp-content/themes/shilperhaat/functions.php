@@ -101,6 +101,7 @@ add_action( 'wp_head', function () {
 	echo '<link rel="icon" href="' . esc_url( $img . 'icon-192.png' ) . '" type="image/png" sizes="192x192">' . "\n";
 	echo '<link rel="icon" href="' . esc_url( $img . 'icon-512.png' ) . '" type="image/png" sizes="512x512">' . "\n";
 	echo '<link rel="apple-touch-icon" href="' . esc_url( $img . 'apple-touch-icon.png' ) . '">' . "\n";
+	echo '<link rel="manifest" href="' . esc_url( home_url( '/manifest.webmanifest' ) ) . '">' . "\n";
 }, 2 );
 
 /**

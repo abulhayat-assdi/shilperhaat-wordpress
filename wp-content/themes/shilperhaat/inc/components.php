@@ -113,3 +113,11 @@ function sh_product_jsonld( $product, $reviews ) {
 	$items[] = array( '@type' => 'ListItem', 'position' => $pos, 'name' => $product->title, 'item' => $url );
 	return array( $prod, array( '@context' => 'https://schema.org', '@type' => 'BreadcrumbList', 'itemListElement' => $items ) );
 }
+
+/** Sanitised rich text with legacy "/uploads/..." references mapped to the WordPress uploads folder. */
+function sh_rich_html( $html ) {
+	$html = wp_kses( (string) $html, sh_allowed_html() );
+	$base = untrailingslashit( sh_media_url( '/uploads/x' ) );
+	$base = substr( $base, 0, -1 ); // ".../shilperhaat/" without the dummy "x"
+	return preg_replace( '#(src|href)=(["\'])/uploads/#i', '$1=$2' . $base, $html );
+}

@@ -146,7 +146,7 @@ get_header();
 						<div style="height:3px;width:48px;background-color:#800000;border-radius:2px;margin-top:-4px"></div>
 					</div>
 					<?php if ( $product->description ) : ?>
-						<div class="prose-description" style="font-size:14px;line-height:1.8;color:#444;font-family:'Open Sans',sans-serif"><?php echo wp_kses( $product->description, sh_allowed_html() ); ?></div>
+						<div class="prose-description" style="font-size:14px;line-height:1.8;color:#444;font-family:'Open Sans',sans-serif"><?php echo sh_rich_html( $product->description ); ?></div>
 					<?php else : ?>
 						<p style="color:#aaa;font-size:14px">No description available.</p>
 					<?php endif; ?>

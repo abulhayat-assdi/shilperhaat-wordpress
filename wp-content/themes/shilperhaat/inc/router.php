@@ -18,6 +18,9 @@ function sh_match_route( $path ) {
 	}
 
 	$static = array(
+		'robots.txt'           => 'seo-robots',
+		'sitemap.xml'          => 'seo-sitemap',
+		'manifest.webmanifest' => 'seo-manifest',
 		'shop'        => 'shop',
 		'cart'        => 'cart',
 		'checkout'    => 'checkout',

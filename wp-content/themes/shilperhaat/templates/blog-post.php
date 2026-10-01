@@ -88,7 +88,7 @@ get_header();
 				</div>
 			<?php endif; ?>
 
-			<div class="blog-content text-gray-700 leading-relaxed"><?php echo wp_kses( $post->content, sh_allowed_html() ); ?></div>
+			<div class="blog-content text-gray-700 leading-relaxed"><?php echo sh_rich_html( $post->content ); ?></div>
 
 			<div class="mt-10 pt-6 border-t border-gray-100">
 				<a href="<?php echo esc_url( home_url( '/blog' ) ); ?>" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 font-semibold text-sm transition-all border-[#800000] text-[#800000] hover:bg-[#800000] hover:text-white">← Back to Blog</a>

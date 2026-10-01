@@ -45,7 +45,7 @@ get_header();
 				<div class="space-y-10">
 					<?php foreach ( $page->sections as $section ) : ?>
 						<?php if ( ! empty( $section['content'] ) ) : ?>
-							<div class="prose prose-lg max-w-none prose-headings:text-gray-800 prose-headings:font-bold prose-h2:text-2xl prose-h2:border-b prose-h2:border-[#e6b3b3] prose-h2:pb-2 prose-h2:mb-6 prose-p:text-gray-600 prose-p:leading-relaxed prose-strong:text-gray-800"><?php echo wp_kses( $section['content'], sh_allowed_html() ); ?></div>
+							<div class="prose prose-lg max-w-none prose-headings:text-gray-800 prose-headings:font-bold prose-h2:text-2xl prose-h2:border-b prose-h2:border-[#e6b3b3] prose-h2:pb-2 prose-h2:mb-6 prose-p:text-gray-600 prose-p:leading-relaxed prose-strong:text-gray-800"><?php echo sh_rich_html( $section['content'] ); ?></div>
 						<?php endif; ?>
 					<?php endforeach; ?>
 				</div>
